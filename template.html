@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23fff' stroke='%23111' stroke-width='4'/%3E%3Cpath d='M2 32a30 30 0 0 1 60 0z' fill='%23e3350d'/%3E%3Crect x='2' y='29' width='60' height='6' fill='%23111'/%3E%3Ccircle cx='32' cy='32' r='10' fill='%23111'/%3E%3Ccircle cx='32' cy='32' r='6.5' fill='%23fff' stroke='%23111' stroke-width='2'/%3E%3C/svg%3E">
+    <title>PKGO IVGD — 포켓몬 GO 실전 개체 분류 터미널</title>
+    <style>
+        :root {
+            --bg: #000000;
+            --panel: #0b0b0b;
+            --panel-2: #111111;
+            --line: #2a2a2a;
+            --line-soft: #1a1a1a;
+            --amber: #ff9d1c;
+            --amber-dim: #b86f0f;
+            --text: #e8e8e8;
+            --muted: #8f8f8f;
+            --dim: #5c5c5c;
+            --green: #2fe36b;
+            --red: #ff4141;
+            --blue: #4fa3ff;
+            --cyan: #38d6e0;
+            --yellow: #ffe45c;
+            --mono: 'Consolas', 'D2Coding', 'Nanum Gothic Coding', 'SF Mono', 'Menlo', 'Courier New', monospace;
+        }
+
+        * { box-sizing: border-box; }
+
+        html, body { height: 100%; }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--mono);
+            font-size: 13px;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { color: var(--blue); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* ── Top bar ─────────────────────────────────────────── */
+        .topbar {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            background: var(--bg);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .topbar-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 6px 14px;
+            flex-wrap: wrap;
+        }
+
+        .brand {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            white-space: nowrap;
+        }
+
+        .brand .fn {
+            color: var(--amber);
+            font-weight: 700;
+            font-size: 15px;
+            letter-spacing: 0.06em;
+        }
+
+        .brand .go {
+            color: var(--bg);
+            background: var(--amber);
+            padding: 0 6px;
+            font-weight: 700;
+            font-size: 12px;
+        }
+
+        .brand .desc { color: var(--muted); font-size: 12px; }
+
+        .status {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            color: var(--muted);
+            font-size: 11.5px;
+            white-space: nowrap;
+            flex-wrap: wrap;
+        }
+
+        .status .live {
+            color: var(--green);
+        }
+
+        .status .live::before {
+            content: '●';
+            margin-right: 5px;
+            animation: blink 1.6s steps(1) infinite;
+        }
+
+        @keyframes blink { 50% { opacity: 0.25; } }
+
+        .status .clock { color: var(--text); }
+
+        /* Function keys row */
+        .fkeys {
+            display: flex;
+            gap: 4px;
+            padding: 0 14px 6px;
+            flex-wrap: wrap;
+        }
+
+        .fkeys a {
+            color: var(--yellow);
+            background: var(--panel-2);
+            border: 1px solid var(--line);
+            padding: 2px 10px;
+            font-size: 11.5px;
+            letter-spacing: 0.04em;
+        }
+
+        .fkeys a:hover { background: var(--amber); color: var(--bg); text-decoration: none; border-color: var(--amber); }
+
+        /* Command line search */
+        .cmd {
+            display: flex;
+            align-items: center;
+            border-top: 1px solid var(--line-soft);
+            background: #050505;
+            padding: 0 14px;
+        }
+
+        .cmd .prompt {
+            color: var(--amber);
+            font-weight: 700;
+            margin-right: 8px;
+            user-select: none;
+        }
+
+        .cmd input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: var(--yellow);
+            font-family: var(--mono);
+            font-size: 14px;
+            padding: 9px 0;
+            caret-color: var(--amber);
+        }
+
+        .cmd input::placeholder { color: var(--dim); }
+
+        .cmd .count { color: var(--muted); font-size: 11.5px; margin-left: 12px; white-space: nowrap; }
+
+        .cmd .clear {
+            background: none;
+            border: 1px solid var(--line);
+            color: var(--muted);
+            font-family: var(--mono);
+            font-size: 11px;
+            padding: 2px 8px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .cmd .clear:hover { color: var(--amber); border-color: var(--amber); }
+
+        /* ── Ticker ──────────────────────────────────────────── */
+        .ticker {
+            overflow: hidden;
+            border-bottom: 1px solid var(--line);
+            background: var(--panel);
+            white-space: nowrap;
+            font-size: 12px;
+        }
+
+        .ticker-track {
+            display: inline-block;
+            padding: 5px 0;
+            animation: scroll 70s linear infinite;
+        }
+
+        .ticker:hover .ticker-track { animation-play-state: paused; }
+
+        @keyframes scroll {
+            from { transform: translateX(0); }
+            to   { transform: translateX(-50%); }
+        }
+
+        .tk { display: inline-block; margin: 0 22px; color: var(--muted); }
+        .tk b { color: var(--text); font-weight: 600; margin-right: 6px; }
+        .tk .up { color: var(--green); }
+        .tk .dn { color: var(--red); }
+        .tk .fl { color: var(--amber); }
+
+        /* ── Layout ──────────────────────────────────────────── */
+        .wrap {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 14px 14px 60px;
+        }
+
+        .panel {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            margin-bottom: 16px;
+        }
+
+        .panel-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            background: var(--amber);
+            color: var(--bg);
+            padding: 5px 12px;
+            font-weight: 700;
+            font-size: 12.5px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .panel-head .sub {
+            font-weight: 400;
+            text-transform: none;
+            letter-spacing: 0;
+            font-size: 11.5px;
+            opacity: 0.85;
+        }
+
+        .panel-note {
+            padding: 8px 12px;
+            color: var(--muted);
+            font-size: 12px;
+            border-bottom: 1px solid var(--line-soft);
+        }
+
+        .panel-note b { color: var(--amber); font-weight: 600; }
+
+        /* Notes / legend panel */
+        .notes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 0;
+        }
+
+        .notes > div {
+            padding: 10px 12px;
+            border-right: 1px solid var(--line-soft);
+            font-size: 12px;
+        }
+
+        .notes > div:last-child { border-right: none; }
+
+        .notes .k {
+            color: var(--amber);
+            font-size: 11px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .notes .v { color: var(--text); }
+        .notes .v small { color: var(--muted); }
+
+        /* ── Tables ──────────────────────────────────────────── */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: auto;
+        }
+
+        th, td {
+            padding: 7px 10px;
+            text-align: left;
+            vertical-align: top;
+            border-bottom: 1px solid var(--line-soft);
+        }
+
+        th {
+            color: var(--amber);
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            background: var(--panel-2);
+            white-space: nowrap;
+            border-bottom: 1px solid var(--line);
+        }
+
+        tbody tr:hover { background: #151515; }
+        tbody tr:last-child td { border-bottom: none; }
+
+        td.name { white-space: nowrap; }
+        td.name b { color: var(--text); font-weight: 700; }
+        td.name .evo { color: var(--muted); display: block; font-size: 11.5px; }
+        td.memo { color: #cfcfcf; }
+        td.memo b { color: var(--yellow); font-weight: 600; }
+        td.memo .warn { color: var(--red); font-weight: 700; }
+        td.moves { color: var(--cyan); font-size: 12px; white-space: nowrap; }
+        td.num { white-space: nowrap; }
+
+        /* Rank chips */
+        .rk {
+            display: inline-block;
+            min-width: 64px;
+            padding: 1px 6px;
+            margin: 1px 2px 1px 0;
+            font-size: 11.5px;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            border: 1px solid transparent;
+            text-align: left;
+            white-space: nowrap;
+        }
+
+        .rk small { font-weight: 400; opacity: 0.8; margin-right: 4px; }
+        .rk.g { color: var(--green); border-color: rgba(47, 227, 107, 0.35); background: rgba(47, 227, 107, 0.06); }
+        .rk.a { color: var(--amber); border-color: rgba(255, 157, 28, 0.35); background: rgba(255, 157, 28, 0.06); }
+        .rk.r { color: var(--red); border-color: rgba(255, 65, 65, 0.35); background: rgba(255, 65, 65, 0.06); }
+        .rk.n { color: var(--dim); border-color: var(--line-soft); }
+
+        .tag {
+            display: inline-block;
+            padding: 0 6px;
+            font-size: 10.5px;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            margin-left: 6px;
+            vertical-align: middle;
+        }
+
+        .tag.new { background: var(--green); color: var(--bg); }
+        .tag.up { background: var(--blue); color: var(--bg); }
+        .tag.down { background: var(--red); color: var(--bg); }
+        .tag.fix { background: var(--yellow); color: var(--bg); }
+
+        /* Move chips: F = 일반기술머신(노멀), C = 특수기술머신(스페셜), ★ = 특별한 기술머신 */
+        td.mvs { white-space: normal; min-width: 210px; }
+        .mvrow { display: flex; flex-wrap: wrap; align-items: center; gap: 3px; margin: 1px 0; }
+        .mvrow .lbl { color: var(--dim); font-size: 10px; letter-spacing: 0.08em; min-width: 34px; }
+        .mv {
+            display: inline-block;
+            padding: 0 5px;
+            font-size: 11.5px;
+            border: 1px solid var(--line);
+            color: var(--text);
+            background: #0e0e0e;
+            white-space: nowrap;
+        }
+        .mv::before {
+            font-size: 9.5px;
+            font-weight: 700;
+            margin-right: 4px;
+            padding: 0 3px;
+            letter-spacing: 0.05em;
+        }
+        .mv.f::before { content: 'F'; color: var(--bg); background: var(--cyan); }
+        .mv.c::before { content: 'C'; color: var(--bg); background: var(--blue); }
+        .mv.e { border-color: var(--amber); color: var(--amber); background: rgba(255, 157, 28, 0.08); }
+        .mv.e::after { content: ' ★'; color: var(--amber); }
+        .mv.x { border-style: dashed; color: var(--muted); }
+        .tmnote { color: var(--amber); font-size: 11px; margin-top: 2px; }
+        .tmnote.ok { color: var(--green); }
+
+        /* Chips list (transfer section) */
+        .chips {
+            list-style: none;
+            margin: 0;
+            padding: 8px 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 4px 10px;
+        }
+
+        .chips li {
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+            padding: 5px 8px;
+            border: 1px solid var(--line-soft);
+            background: #0e0e0e;
+            font-size: 12px;
+        }
+
+        .chips li:hover { border-color: var(--line); background: #141414; }
+        .chips li .nm { color: var(--text); }
+        .chips li .nm small { color: var(--muted); display: block; font-size: 11px; }
+        .chips li .rk { min-width: 0; align-self: flex-start; }
+
+        .no-result {
+            padding: 30px;
+            text-align: center;
+            color: var(--red);
+            border: 1px dashed var(--line);
+            margin-bottom: 16px;
+        }
+
+        mark {
+            background: var(--amber);
+            color: var(--bg);
+            padding: 0 1px;
+        }
+
+        /* Source panel */
+        .src { color: var(--muted); font-size: 12px; padding: 10px 12px; }
+        .src ul { margin: 6px 0 0; padding-left: 18px; }
+        .src li { margin-bottom: 3px; }
+
+        .legend {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            align-items: center;
+            color: var(--muted);
+            font-size: 11.5px;
+        }
+
+        /* ── Mobile ──────────────────────────────────────────── */
+        @media (max-width: 820px) {
+            body { font-size: 12.5px; }
+            thead { display: none; }
+            table, tbody, tr, td { display: block; width: 100%; }
+            tr { border-bottom: 1px solid var(--line); padding: 6px 0; }
+            td { border-bottom: none; padding: 3px 10px; }
+            td.name { white-space: normal; }
+            td.moves, td.mvs { white-space: normal; min-width: 0; }
+            td[data-label]::before {
+                content: attr(data-label);
+                display: inline-block;
+                min-width: 72px;
+                color: var(--amber);
+                font-size: 10.5px;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                margin-right: 6px;
+            }
+            td.name::before { display: none; }
+            .status .src-tag { display: none; }
+        }
+
+        /* 자동 생성 보조 스타일 */
+        .rk.x { border-style: dashed; opacity: 0.75; }
+        .auto { color: var(--muted); font-size: 11.5px; }
+        .tag.note { background: var(--amber); color: var(--bg); }
+        .filters { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; padding: 6px 14px; border-top: 1px solid var(--line-soft); background: #050505; }
+        .filters .lbl { color: var(--dim); font-size: 10.5px; letter-spacing: 0.1em; margin-right: 4px; }
+        .filters button { background: var(--panel-2); border: 1px solid var(--line); color: var(--muted); font-family: var(--mono); font-size: 11px; padding: 2px 10px; cursor: pointer; letter-spacing: 0.04em; }
+        .filters button.on { background: var(--amber); color: var(--bg); border-color: var(--amber); font-weight: 700; }
+        .panel-head .cnt { font-weight: 400; font-size: 11px; opacity: 0.8; margin-left: 6px; }
+        .chips li .auto { display: block; color: var(--dim); }
+    </style>
+</head>
+<body>
+
+<!-- ── TOP BAR ─────────────────────────────────────────────── -->
+<header class="topbar">
+    <div class="topbar-row">
+        <div class="brand">
+            <span class="fn">PKGO IVGD</span><span class="go">GO</span>
+            <span class="desc">포켓몬 GO 실전 개체 분류 터미널 · 전 종 {{N_TOTAL}}계보</span>
+        </div>
+        <div class="status">
+            <span class="live">LIVE DATA</span>
+            <span class="src-tag">PVPOKE {{PVPOKE_DATE}} · DITTOBASE {{DITTO_DATE}} · BUILD {{BUILD_DATE}}</span>
+            <span class="clock" id="clock">--:--:--</span>
+        </div>
+    </div>
+    <nav class="fkeys">
+        <a href="#s1">1) BOTH 겸용</a>
+        <a href="#s2">2) RAID 레이드</a>
+        <a href="#s3">3) PVP 배틀리그</a>
+        <a href="#s4">4) XFER 박사행</a>
+        <a href="#s5">5) SRC 출처</a>
+    </nav>
+    <div class="cmd">
+        <span class="prompt">&gt;</span>
+        <input type="search" id="searchInput" placeholder="SEARCH — 포켓몬 / 진화형 / 리그 / 기술 / 순위 (공백 구분 AND 검색, ESC 초기화)" autocomplete="off">
+        <span class="count" id="searchCount"></span>
+        <button type="button" class="clear" id="searchClear" hidden>CLR</button>
+    </div>
+    <div class="filters">
+        <span class="lbl">FILTER</span>
+        <button type="button" data-filter="" class="on">전체</button>
+        <button type="button" data-filter="note">메모 있음 ({{N_NOTES}})</button>
+        <button type="button" data-filter="elite">★ 특별한 머신 필요 ({{N_ELITE}})</button>
+        <button type="button" data-filter="mega">메가 보유</button>
+        <button type="button" data-filter="shadow">그림자 보유</button>
+        <button type="button" data-filter="legend">전설/환상</button>
+    </div>
+</header>
+
+<!-- ── TICKER ──────────────────────────────────────────────── -->
+<div class="ticker" aria-hidden="true">
+    <div class="ticker-track" id="tickerTrack">
+{{TICKER}}
+    </div>
+</div>
+
+<main class="wrap">
+
+    <section class="panel s-meta">
+        <div class="panel-head">IV SCREEN <span class="sub">개체값 선별 기준 · 범례 · 분류 기준</span></div>
+        <div class="notes">
+            <div>
+                <div class="k">RAID / MASTER</div>
+                <div class="v">공격 <b>14~15</b> 포함 3성 이상 <small>(최고 15/15/15)</small></div>
+            </div>
+            <div>
+                <div class="k">GREAT / ULTRA</div>
+                <div class="v">공격 <b>0~2</b> · 방어 <b>13~15</b> · 체력 <b>13~15</b> <small>(공낮방체높)</small></div>
+            </div>
+            <div>
+                <div class="k">TRANSFER</div>
+                <div class="v">도감에 최종 진화형 1마리 등록 후 전량 박사행 <small>(가방 칸 확보)</small></div>
+            </div>
+            <div>
+                <div class="k">TM LEGEND — 기술머신</div>
+                <div class="legend">
+                    <span class="mv f">빠른 기술</span>
+                    <span class="mv c">차지 기술</span>
+                    <span class="mv c e">레거시</span>
+                    <span class="mv c x">미출시+</span>
+                    <span>F = <b style="color:var(--cyan)">일반기술머신</b>(노멀) · C = <b style="color:var(--blue)">특수기술머신</b>(스페셜) · ★ = <b style="color:var(--amber)">특별한 기술머신</b> 필수 (커뮤니티데이/이벤트 중 진화하면 무료) · + = 아직 미출시 기술 가정치</span>
+                </div>
+            </div>
+            <div>
+                <div class="k">RANK LEGEND</div>
+                <div class="legend">
+                    <span class="rk g">≤ 50</span>
+                    <span class="rk a">51–200</span>
+                    <span class="rk r">201+</span>
+                    <span class="rk n">— n/a</span>
+                    <span>GL 슈퍼({{GL_N}}종) · UL 하이퍼({{UL_N}}) · ML 마스터({{ML_N}}) · 타입별 레이드 딜러 순위(상위 {{T_RAID}}만 수집) · (S)=그림자 (M)=메가</span>
+                </div>
+            </div>
+            <div>
+                <div class="k">분류 기준 (자동)</div>
+                <div class="v"><small>BOTH = 레이드 타입 {{T_RAID}}위 이내 <b>그리고</b> GL/UL/ML 중 {{T_BOTH}}위 이내 · RAID = 레이드 {{T_RAID}}위 이내 · PVP = GL {{T_GL}} / UL {{T_UL}} / ML {{T_ML}}위 이내 · XFER = 나머지. 계보(진화 라인) 단위로 판정, 그림자·메가·폼 포함.</small></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="no-result" id="noResult" hidden>NO MATCH — 검색 결과가 없습니다.</div>
+
+    <!-- ── 1. BOTH ─────────────────────────────────────────── -->
+    <section class="panel" id="s1">
+        <div class="panel-head">1) BOTH — 레이드 + 배틀리그 겸용<span class="cnt">{{N_BOTH}}</span> <span class="sub">공15 3성 1마리 + 공낮방체높 1마리, 두 종류 보관</span></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>포켓몬</th>
+                    <th>레이드 (타입 순위)</th>
+                    <th>GL</th>
+                    <th>UL</th>
+                    <th>ML</th>
+                    <th>기술 세팅 (기술머신)</th>
+                    <th>메모</th>
+                </tr>
+            </thead>
+            <tbody>{{BOTH_ROWS}}
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ── 2. RAID ─────────────────────────────────────────── -->
+    <section class="panel" id="s2">
+        <div class="panel-head">2) RAID — 레이드 / 메가진화 전용<span class="cnt">{{N_RAID}}</span> <span class="sub">공14~15 3성 1~2마리만 보관, 공낮 개체는 박사행</span></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>포켓몬</th>
+                    <th>레이드 (타입 순위)</th>
+                    <th>PVP 최고</th>
+                    <th>기술 세팅 (기술머신)</th>
+                    <th>메모</th>
+                </tr>
+            </thead>
+            <tbody>{{RAID_ROWS}}
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ── 3. PVP ──────────────────────────────────────────── -->
+    <section class="panel" id="s3">
+        <div class="panel-head">3) PVP — 배틀리그 전용<span class="cnt">{{N_PVP}}</span> <span class="sub">공0~2 방체높 개체 1마리만 보관 · 레이드 미사용</span></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>포켓몬</th>
+                    <th>GL</th>
+                    <th>UL</th>
+                    <th>ML</th>
+                    <th>기술 세팅 (기술머신)</th>
+                    <th>메모</th>
+                </tr>
+            </thead>
+            <tbody>{{PVP_ROWS}}
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ── 4. TRANSFER ─────────────────────────────────────── -->
+    <section class="panel" id="s4">
+        <div class="panel-head">4) XFER — 도감작 후 전량 박사행<span class="cnt">{{N_XFER}}</span> <span class="sub">개체값 확인 불필요 · 진화형 1마리 등록 후 이송 (도감 순)</span></div>
+        <ul class="chips">
+{{XFER_ITEMS}}
+        </ul>
+    </section>
+
+    <!-- ── 5. SOURCES ──────────────────────────────────────── -->
+    <section class="panel s-meta" id="s5">
+        <div class="panel-head">5) SRC — 데이터 출처 <span class="sub">빌드 {{BUILD_DATE}} · 데이터 수집 {{FETCHED}}</span></div>
+        <div class="src">
+            이 페이지는 <code>build.py</code>가 아래 데이터로 자동 생성합니다. 수작업 메모(NOTE 태그)는 <code>notes.json</code>에서 덧입혀지며, 메모 안의 순위 숫자는 작성 당시 값이라 칩의 최신 순위와 다를 수 있습니다.
+            <ul>
+                <li><b>배틀리그 순위·최적 기술</b> — <a href="https://pvpoke.com/rankings/" target="_blank" rel="noopener">PvPoke</a> 종합(overall) 랭킹 (GitHub 저장소 원본, gamemaster {{PVPOKE_DATE}}).</li>
+                <li><b>레이드 딜러 순위</b> — <a href="https://www.dittobase.com/pokemon-go/best-attackers/fire" target="_blank" rel="noopener">Dittobase Best Attackers</a> 18개 타입 × 상위 {{T_RAID}}위 (eDPS 기준, {{DITTO_DATE}} 갱신). 51위 밖은 "50위 밖"으로만 표시.</li>
+                <li><b>특별한 기술머신(★) 여부</b> — PvPoke gamemaster의 종별 <code>eliteMoves</code> + Dittobase <code>isElite</code> 교차.</li>
+                <li><b>한국어 이름</b> — <a href="https://github.com/PokeAPI/pokeapi" target="_blank" rel="noopener">PokeAPI</a> 종/기술 이름 테이블 (폼 이름은 스크립트 매핑).</li>
+                <li>저장소: <a href="https://github.com/SondoKim/poke-guide" target="_blank" rel="noopener">github.com/SondoKim/poke-guide</a></li>
+            </ul>
+        </div>
+    </section>
+
+</main>
+
+<script>
+(function () {
+    // ── 시계 ──
+    var clock = document.getElementById('clock');
+    function tick() {
+        var d = new Date();
+        var p = function (n) { return (n < 10 ? '0' : '') + n; };
+        clock.textContent = d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()) + ' ' +
+            p(d.getHours()) + ':' + p(d.getMinutes()) + ':' + p(d.getSeconds());
+    }
+    tick(); setInterval(tick, 1000);
+
+    // ── 티커: 무한 스크롤을 위해 내용 복제 ──
+    var track = document.getElementById('tickerTrack');
+    track.innerHTML += track.innerHTML;
+
+    // ── 검색 + 필터 ──
+    var input = document.getElementById('searchInput');
+    var clearBtn = document.getElementById('searchClear');
+    var countEl = document.getElementById('searchCount');
+    var noResult = document.getElementById('noResult');
+    var sections = Array.prototype.slice.call(document.querySelectorAll('.panel:not(.s-meta)'));
+    var filterBtns = Array.prototype.slice.call(document.querySelectorAll('.filters button'));
+    var activeFilter = '';
+
+    var items = Array.prototype.slice.call(document.querySelectorAll('.panel tbody tr, .panel .chips li'));
+    items.forEach(function (el) {
+        el.dataset.original = el.innerHTML;
+        el.dataset.text = el.textContent.replace(/\s+/g, ' ').toLowerCase();
+    });
+
+    function escapeRegExp(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+    function highlight(el, terms) {
+        var re = new RegExp('(' + terms.map(escapeRegExp).join('|') + ')', 'gi');
+        var walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
+        var nodes = [];
+        while (walker.nextNode()) nodes.push(walker.currentNode);
+        nodes.forEach(function (node) {
+            if (!re.test(node.nodeValue)) return;
+            re.lastIndex = 0;
+            var span = document.createElement('span');
+            span.innerHTML = node.nodeValue.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(re, '<mark>$1</mark>');
+            node.parentNode.replaceChild(span, node);
+        });
+    }
+
+    function filter() {
+        var q = input.value.trim().toLowerCase();
+        var terms = q ? q.split(/\s+/) : [];
+        var total = 0;
+        clearBtn.hidden = !q;
+        items.forEach(function (el) {
+            el.innerHTML = el.dataset.original;
+            var match = terms.every(function (t) { return el.dataset.text.indexOf(t) !== -1; });
+            if (match && activeFilter) match = (' ' + (el.dataset.flags || '') + ' ').indexOf(' ' + activeFilter + ' ') !== -1;
+            el.style.display = match ? '' : 'none';
+            if (match) { total++; if (terms.length) highlight(el, terms); }
+        });
+        sections.forEach(function (sec) {
+            var all = sec.querySelectorAll('tbody tr, .chips li').length;
+            if (!all) return;
+            var visible = sec.querySelectorAll('tbody tr:not([style*="display: none"]), .chips li:not([style*="display: none"])').length;
+            sec.style.display = visible ? '' : 'none';
+            var cnt = sec.querySelector('.panel-head .cnt');
+            if (cnt) cnt.textContent = (q || activeFilter) ? (visible + ' / ' + all) : all;
+        });
+        noResult.hidden = total > 0;
+        countEl.textContent = (q || activeFilter) ? (total + ' / ' + items.length + ' HITS') : '';
+    }
+
+    input.addEventListener('input', filter);
+    input.addEventListener('keydown', function (e) { if (e.key === 'Escape') { input.value = ''; filter(); input.blur(); } });
+    clearBtn.addEventListener('click', function () { input.value = ''; filter(); input.focus(); });
+    filterBtns.forEach(function (b) {
+        b.addEventListener('click', function () {
+            activeFilter = b.dataset.filter;
+            filterBtns.forEach(function (x) { x.classList.toggle('on', x === b); });
+            filter();
+        });
+    });
+    document.addEventListener('keydown', function (e) {
+        if (document.activeElement === input) return;
+        if (e.key >= '1' && e.key <= '5') { var t = document.getElementById('s' + e.key); if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+        if (e.key === '/') { e.preventDefault(); input.focus(); }
+    });
+})();
+</script>
+
+</body>
+</html>
