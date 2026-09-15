@@ -448,6 +448,31 @@
             .status .src-tag { display: none; }
         }
 
+        /* 맨 위로 버튼 */
+        .totop {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+            z-index: 30;
+            width: 42px;
+            height: 42px;
+            border: 1px solid var(--amber);
+            background: var(--bg);
+            color: var(--amber);
+            font-family: var(--mono);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            line-height: 1.1;
+            cursor: pointer;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(8px);
+            transition: opacity 0.2s, transform 0.2s;
+        }
+        .totop.show { opacity: 1; pointer-events: auto; transform: none; }
+        .totop:hover { background: var(--amber); color: var(--bg); }
+        .totop span { display: block; font-size: 14px; }
         /* 자동 생성 보조 스타일 */
         .rk.x { border-style: dashed; opacity: 0.75; }
         .wrap { max-width: 1500px; }
@@ -3449,6 +3474,8 @@
 
 </main>
 
+<button type="button" class="totop" id="toTop" title="맨 위로 (Home 키)"><span>▲</span>TOP</button>
+
 <script>
 (function () {
     // ── 시계 ──
@@ -3530,6 +3557,13 @@
             filter();
         });
     });
+    // ── 맨 위로 버튼 ──
+    var toTop = document.getElementById('toTop');
+    function onScroll() { toTop.classList.toggle('show', (window.scrollY || document.documentElement.scrollTop) > 400); }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    toTop.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
     document.addEventListener('keydown', function (e) {
         if (document.activeElement === input) return;
         if (e.key >= '1' && e.key <= '5') { var t = document.getElementById('s' + e.key); if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
