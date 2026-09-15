@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAHWklEQVR42qVXa2xUxxX+Zubea+/17npZ73p3Yy/GtaWaALVj/lgVjyIgbuSiJDQtraqArJSU/KhK1B+RKlTUH65aVaUtCEUUpRDJQlUfKVIRAiVQKtGHhFqklLYQTPxoMTR+rHfZ1713Zk5/7K5ZL2tD2iPNn7l3vvOdb86ZOSPweGMADAC6evLVjTBNEQy1Bxt8L7Y6+to8VM06AwA9CfhKJoAS8MZEwv5Psbi5wNizjqZnPEKbAkIAwIEHJnCvgeN9m+t3hcSVyXR6oRbj4xIQAFRHc3OoyPnBHLCvoNmaRg5EBJAwCCFBYAAymuGeZJiRQF4DjYzu+Rl+bjL2w3/Pz98tcQTVU4QtQ4oB0PFw+AsFoh9kNe/oMDWGAlrvbCLdbRELCTCLgYEBkkALCjThMvpdjrHfZrm45XI0MT1rc3z7/lzqzSpsWolAlfPQ99Kav2FzwoFVWr4c0rzNBPcIcAiQ9DApGACDARYDGhgwI0G/TjP143lhzCqOZqFPfzSX+hoAt5YEq3EuAMhoOHQmTeLLT5tK/iSh+UYf8YwGHA1w9pBltVX01QSYDAgJ4AMH9M37Ql0tCCPE9OWZVGoIgFdOaKrs85I9j4dD31/Q4sAmn/LOJJWZtMDmyykklnFeLR1nJeSsBiIG2EvNxCcc8q67ojtqN3TlCsVflX0tISAAqES4+cUMiaM9lvbOJJVhc7CsLkXE8ORWIVLRe1eQxF/y8G55vLfFbljIFYp/qpBYDKg7HA7MaH3T4Cz+m6SidY3EM6q0t8sZPUEpKQA+BnwkQbumDD0r4flBPfcXFqYAMF5hkoV+PQuROLBKq34f8fQKzlV5Ew1WUocAKFq+lnMaWGOBvdGiyAFr1Ix9p8yfMQBsoL298UY2e7vVYE+d75AUFOCS6kemAQR4afWcFtAAWriGCUJaL58j5QOLnp8S+HuRFVst4xOTMzP3OQC6m89vLhBvGwpoesoEd3R9ECo7fzcv8JV/cWy+kcemv+Xw0gTwy6yBJlan0MsmCQgIsC8GtXIZ97nS/VyZFJAn/VwDZ7TNJl3UpSglPRyKAJcAPweOzBvY84GDyzmOdZu2YuO2nfir9mH/rTy+NWuigS1dWxmVyvi0TQhxogKx5yoXBhxCX8IgNmAT83OggS9VQBMQFMA7DwRGporoX/tJnPrZW/jUM/0AgA9v38Zrrx3AT3//B6xvsPH1VRILqlS2tdXR2wjeZRF7v4D1vwAEGwB8N1at+merQMeXmjXV20INwObA2QzDnSLw5z9eRc/T66BU6YAQQmBudhZ9/RthZVN4OSLgaqp7WFkM9E6GsQ8dlo36aD0LBAItpmHcVGCRPBO0XA5xLuBlUti57TO4cOECpJQwDAMA4HkeTNPEV195BW+dfhuNkVYoKZcrXbJJMQMkCegrITAGSAl6kKp/sDCAcQGSEqZpluce5WlaFqAVkJoFKflINrJyhpK/CTAtAhFYLBZryufzN1taWtqHhoaIiB5BJiJwznHp0iXMzc3h+vXraGtrg+d5JcemiWKxiN7eXmSzWezevRta62XPrytXrrCpqal8OBzeAMYYbNu+2tPTQ0QkaQU7e/YsAaDBwUG6e/fu4nwqlaK9e/cSADp69Cg9xtTWrVvJNM2xEydOlOQMh8NvNjU16WvXrnme55HjOOR53pLhOA4RER08eJAAUCwWo3379tH+/fups7OTANCePXvI8zxyXfeR9ZW5qakpGYvFKBgMnlvUpL29/QUANDIyIomIPM+rT10pIiI6deoU9ff3k2maJISgtWvX0pEjR0hKSVpr0lo/sraCOTo66nHOKZFIfGORQHd3d9Dn881u2LBBFwoFpZSqC0JES+YnJydpfHx8kVjt9zrk9Y4dO7RlWW5HR8ea6u4VsVjsR4wxOnnypLeSCkREUsq6c8s5r2BdvHjRM02TIpHI2aq7ChwA6+zsjAUCgVQymVTT09OqWvJls0kpWkmt6n+y2azu7e2Vtm2rZDK5rqoDe8gkkUi8alkWDQ4OupWFjyOxkmmtF9UaHh52hRAUj8dHqn3WXt2IxWJvCyFoeHjYrZXw41j1Nh06dMjlnFM0Gn2vKnJWr5MSAKxoNHpZCEG7du1yp6endTWRlSRXSi3JhXQ6rYeHh13OOUUikRvBYDBc6dhWaucYAF8sFhs1TZO6urpodHTU8zxP1zrzPI+klPWSUp87d0729fVpIQS1trZe9Pv9kYd9yRM+1+Lx+Ot+vz8jhKCBgQE6fvy4HBsbk1JKRUS6ZqjJyUl5+vRpb/v27WRZFtm27cbj8e9WOeVP+jRbfKAkk8kux3EOZTKZz7uuG2hpacHq1avR1dWFaDQKIkIqlcL4+DgmJiYwMzMDIYQTDAbPWZY1Mj09fb0a739+nHZ3d7cXi8XPZrPZZ4vF4gbP81q11oHyzZgzDGPO5/P9w7bt92zbPn/nzp2x//dxWtVLglWDHD582Dh//nwkl8uFy7dhesuWLbPHjh1zashTvair7b/fath9eP9vxQAAAABJRU5ErkJggg==">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23fff' stroke='%23111' stroke-width='4'/%3E%3Cpath d='M2 32a30 30 0 0 1 60 0z' fill='%23e3350d'/%3E%3Crect x='2' y='29' width='60' height='6' fill='%23111'/%3E%3Ccircle cx='32' cy='32' r='10' fill='%23111'/%3E%3Ccircle cx='32' cy='32' r='6.5' fill='%23fff' stroke='%23111' stroke-width='2'/%3E%3C/svg%3E">
+    <title>PKGO IVGD — 포켓몬 GO 실전 개체 분류 터미널</title>
+    <style>
+        :root {
+            --bg: #000000;
+            --panel: #0b0b0b;
+            --panel-2: #111111;
+            --line: #2a2a2a;
+            --line-soft: #1a1a1a;
+            --amber: #ff9d1c;
+            --amber-dim: #b86f0f;
+            --text: #e8e8e8;
+            --muted: #8f8f8f;
+            --dim: #5c5c5c;
+            --green: #2fe36b;
+            --red: #ff4141;
+            --blue: #4fa3ff;
+            --cyan: #38d6e0;
+            --yellow: #ffe45c;
+            --mono: 'Consolas', 'D2Coding', 'Nanum Gothic Coding', 'SF Mono', 'Menlo', 'Courier New', monospace;
+        }
+
+        * { box-sizing: border-box; }
+
+        html, body { height: 100%; }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--mono);
+            font-size: 13px;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { color: var(--blue); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* ── Top bar ─────────────────────────────────────────── */
+        .topbar {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            background: var(--bg);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .topbar-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 6px 14px;
+            flex-wrap: wrap;
+        }
+
+        .brand {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            white-space: nowrap;
+        }
+
+        .brand .fn {
+            color: var(--amber);
+            font-weight: 700;
+            font-size: 15px;
+            letter-spacing: 0.06em;
+        }
+
+        .brand .go {
+            color: var(--bg);
+            background: var(--amber);
+            padding: 0 6px;
+            font-weight: 700;
+            font-size: 12px;
+        }
+
+        .brand .desc { color: var(--muted); font-size: 12px; }
+
+        .status {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            color: var(--muted);
+            font-size: 11.5px;
+            white-space: nowrap;
+            flex-wrap: wrap;
+        }
+
+        .status .live {
+            color: var(--green);
+        }
+
+        .status .live::before {
+            content: '●';
+            margin-right: 5px;
+            animation: blink 1.6s steps(1) infinite;
+        }
+
+        @keyframes blink { 50% { opacity: 0.25; } }
+
+        .status .clock { color: var(--text); }
+
+        /* Function keys row */
+        .fkeys {
+            display: flex;
+            gap: 4px;
+            padding: 0 14px 6px;
+            flex-wrap: wrap;
+        }
+
+        .fkeys a {
+            color: var(--yellow);
+            background: var(--panel-2);
+            border: 1px solid var(--line);
+            padding: 2px 10px;
+            font-size: 11.5px;
+            letter-spacing: 0.04em;
+        }
+
+        .fkeys a:hover { background: var(--amber); color: var(--bg); text-decoration: none; border-color: var(--amber); }
+
+        /* Command line search */
+        .cmd {
+            display: flex;
+            align-items: center;
+            border-top: 1px solid var(--line-soft);
+            background: #050505;
+            padding: 0 14px;
+        }
+
+        .cmd .prompt {
+            color: var(--amber);
+            font-weight: 700;
+            margin-right: 8px;
+            user-select: none;
+        }
+
+        .cmd input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: var(--yellow);
+            font-family: var(--mono);
+            font-size: 14px;
+            padding: 9px 0;
+            caret-color: var(--amber);
+        }
+
+        .cmd input::placeholder { color: var(--dim); }
+
+        .cmd .count { color: var(--muted); font-size: 11.5px; margin-left: 12px; white-space: nowrap; }
+
+        .cmd .clear {
+            background: none;
+            border: 1px solid var(--line);
+            color: var(--muted);
+            font-family: var(--mono);
+            font-size: 11px;
+            padding: 2px 8px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .cmd .clear:hover { color: var(--amber); border-color: var(--amber); }
+
+        /* ── Ticker ──────────────────────────────────────────── */
+        .ticker {
+            overflow: hidden;
+            border-bottom: 1px solid var(--line);
+            background: var(--panel);
+            white-space: nowrap;
+            font-size: 12px;
+        }
+
+        .ticker-track {
+            display: inline-block;
+            padding: 5px 0;
+            animation: scroll 70s linear infinite;
+        }
+
+        .ticker:hover .ticker-track { animation-play-state: paused; }
+
+        @keyframes scroll {
+            from { transform: translateX(0); }
+            to   { transform: translateX(-50%); }
+        }
+
+        .tk { display: inline-block; margin: 0 22px; color: var(--muted); }
+        .tk b { color: var(--text); font-weight: 600; margin-right: 6px; }
+        .tk .up { color: var(--green); }
+        .tk .dn { color: var(--red); }
+        .tk .fl { color: var(--amber); }
+
+        /* ── Layout ──────────────────────────────────────────── */
+        .wrap {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 14px 14px 60px;
+        }
+
+        .panel {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            margin-bottom: 16px;
+        }
+
+        .panel-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            background: var(--amber);
+            color: var(--bg);
+            padding: 5px 12px;
+            font-weight: 700;
+            font-size: 12.5px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .panel-head .sub {
+            font-weight: 400;
+            text-transform: none;
+            letter-spacing: 0;
+            font-size: 11.5px;
+            opacity: 0.85;
+        }
+
+        .panel-note {
+            padding: 8px 12px;
+            color: var(--muted);
+            font-size: 12px;
+            border-bottom: 1px solid var(--line-soft);
+        }
+
+        .panel-note b { color: var(--amber); font-weight: 600; }
+
+        /* Notes / legend panel */
+        .notes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 0;
+        }
+
+        .notes > div {
+            padding: 10px 12px;
+            border-right: 1px solid var(--line-soft);
+            font-size: 12px;
+        }
+
+        .notes > div:last-child { border-right: none; }
+
+        .notes .k {
+            color: var(--amber);
+            font-size: 11px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .notes .v { color: var(--text); }
+        .notes .v small { color: var(--muted); }
+
+        /* ── Tables ──────────────────────────────────────────── */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: auto;
+        }
+
+        th, td {
+            padding: 7px 10px;
+            text-align: left;
+            vertical-align: top;
+            border-bottom: 1px solid var(--line-soft);
+        }
+
+        th {
+            color: var(--amber);
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            background: var(--panel-2);
+            white-space: nowrap;
+            border-bottom: 1px solid var(--line);
+        }
+
+        tbody tr:hover { background: #151515; }
+        tbody tr:last-child td { border-bottom: none; }
+
+        td.name { white-space: nowrap; }
+        td.name b { color: var(--text); font-weight: 700; }
+        td.name .evo { color: var(--muted); display: block; font-size: 11.5px; }
+        td.memo { color: #cfcfcf; }
+        td.memo b { color: var(--yellow); font-weight: 600; }
+        td.memo .warn { color: var(--red); font-weight: 700; }
+        td.moves { color: var(--cyan); font-size: 12px; white-space: nowrap; }
+        td.num { white-space: nowrap; }
+
+        /* Rank chips */
+        .rk {
+            display: inline-block;
+            min-width: 64px;
+            padding: 1px 6px;
+            margin: 1px 2px 1px 0;
+            font-size: 11.5px;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            border: 1px solid transparent;
+            text-align: left;
+            white-space: nowrap;
+        }
+
+        .rk small { font-weight: 400; opacity: 0.8; margin-right: 4px; }
+        .rk.g { color: var(--green); border-color: rgba(47, 227, 107, 0.35); background: rgba(47, 227, 107, 0.06); }
+        .rk.a { color: var(--amber); border-color: rgba(255, 157, 28, 0.35); background: rgba(255, 157, 28, 0.06); }
+        .rk.r { color: var(--red); border-color: rgba(255, 65, 65, 0.35); background: rgba(255, 65, 65, 0.06); }
+        .rk.n { color: var(--dim); border-color: var(--line-soft); }
+
+        .tag {
+            display: inline-block;
+            padding: 0 6px;
+            font-size: 10.5px;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            margin-left: 6px;
+            vertical-align: middle;
+        }
+
+        .tag.new { background: var(--green); color: var(--bg); }
+        .tag.up { background: var(--blue); color: var(--bg); }
+        .tag.down { background: var(--red); color: var(--bg); }
+        .tag.fix { background: var(--yellow); color: var(--bg); }
+
+        /* Move chips: F = 일반기술머신(노멀), C = 특수기술머신(스페셜), ★ = 특별한 기술머신 */
+        td.mvs { white-space: normal; min-width: 210px; }
+        .mvrow { display: flex; flex-wrap: wrap; align-items: center; gap: 3px; margin: 1px 0; }
+        .mvrow .lbl { color: var(--dim); font-size: 10px; letter-spacing: 0.08em; min-width: 34px; }
+        .mv {
+            display: inline-block;
+            padding: 0 5px;
+            font-size: 11.5px;
+            border: 1px solid var(--line);
+            color: var(--text);
+            background: #0e0e0e;
+            white-space: nowrap;
+        }
+        .mv::before {
+            font-size: 9.5px;
+            font-weight: 700;
+            margin-right: 4px;
+            padding: 0 3px;
+            letter-spacing: 0.05em;
+        }
+        .mv.f::before { content: 'F'; color: var(--bg); background: var(--cyan); }
+        .mv.c::before { content: 'C'; color: var(--bg); background: var(--blue); }
+        .mv.e { border-color: var(--amber); color: var(--amber); background: rgba(255, 157, 28, 0.08); }
+        .mv.e::after { content: ' ★'; color: var(--amber); }
+        .mv.x { border-style: dashed; color: var(--muted); }
+        .tmnote { color: var(--amber); font-size: 11px; margin-top: 2px; }
+        .tmnote.ok { color: var(--green); }
+
+        /* Chips list (transfer section) */
+        .chips {
+            list-style: none;
+            margin: 0;
+            padding: 8px 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 4px 10px;
+        }
+
+        .chips li {
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+            padding: 5px 8px;
+            border: 1px solid var(--line-soft);
+            background: #0e0e0e;
+            font-size: 12px;
+        }
+
+        .chips li:hover { border-color: var(--line); background: #141414; }
+        .chips li .nm { color: var(--text); }
+        .chips li .nm small { color: var(--muted); display: block; font-size: 11px; }
+        .chips li .rk { min-width: 0; align-self: flex-start; }
+
+        .no-result {
+            padding: 30px;
+            text-align: center;
+            color: var(--red);
+            border: 1px dashed var(--line);
+            margin-bottom: 16px;
+        }
+
+        mark {
+            background: var(--amber);
+            color: var(--bg);
+            padding: 0 1px;
+        }
+
+        /* Source panel */
+        .src { color: var(--muted); font-size: 12px; padding: 10px 12px; }
+        .src ul { margin: 6px 0 0; padding-left: 18px; }
+        .src li { margin-bottom: 3px; }
+
+        .legend {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            align-items: center;
+            color: var(--muted);
+            font-size: 11.5px;
+        }
+
+        /* ── Mobile ──────────────────────────────────────────── */
+        @media (max-width: 820px) {
+            body { font-size: 12.5px; }
+            thead { display: none; }
+            table, tbody, tr, td { display: block; width: 100%; }
+            tr { border-bottom: 1px solid var(--line); padding: 6px 0; }
+            td { border-bottom: none; padding: 3px 10px; }
+            td.name { white-space: normal; }
+            td.moves, td.mvs { white-space: normal; min-width: 0; }
+            td[data-label]::before {
+                content: attr(data-label);
+                display: inline-block;
+                min-width: 72px;
+                color: var(--amber);
+                font-size: 10.5px;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                margin-right: 6px;
+            }
+            td.name::before { display: none; }
+            .status .src-tag { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ── TOP BAR ─────────────────────────────────────────────── -->
+<header class="topbar">
+    <div class="topbar-row">
+        <div class="brand">
+            <span class="fn">PKGO IVGD</span><span class="go">GO</span>
+            <span class="desc">포켓몬 GO 실전 개체 분류 터미널</span>
+        </div>
+        <div class="status">
+            <span class="live">LIVE DATA</span>
+            <span class="src-tag">PVPOKE 2026-09-15 · DITTOBASE</span>
+            <span class="clock" id="clock">--:--:--</span>
+        </div>
+    </div>
+    <nav class="fkeys">
+        <a href="#s1">1) BOTH 겸용</a>
+        <a href="#s2">2) RAID 레이드</a>
+        <a href="#s3">3) PVP 배틀리그</a>
+        <a href="#s4">4) XFER 박사행</a>
+        <a href="#s5">5) SRC 출처</a>
+    </nav>
+    <div class="cmd">
+        <span class="prompt">&gt;</span>
+        <input type="search" id="searchInput" placeholder="SEARCH — 포켓몬 / 진화형 / 리그 / 기술 / 순위 (공백 구분 AND 검색, ESC 초기화)" autocomplete="off">
+        <span class="count" id="searchCount"></span>
+        <button type="button" class="clear" id="searchClear" hidden>CLR</button>
+    </div>
+</header>
+
+<!-- ── TICKER ──────────────────────────────────────────────── -->
+<div class="ticker" aria-hidden="true">
+    <div class="ticker-track" id="tickerTrack">
+        <span class="tk"><b>아머까오</b> UL <span class="up">#2</span> GL <span class="up">#7</span></span>
+        <span class="tk"><b>폭슬라이</b> GL <span class="up">#15</span> <span class="up">▲ 박사행→PVP</span></span>
+        <span class="tk"><b>야느와르몽</b> UL <span class="up">#24</span> <span class="up">▲ 박사행→PVP</span></span>
+        <span class="tk"><b>한카리아스</b> ML <span class="up">#25</span> DRG <span class="up">#7</span>(S)</span>
+        <span class="tk"><b>저승갓숭</b> GL <span class="up">#31</span> UL <span class="fl">#59</span></span>
+        <span class="tk"><b>왕큰부리</b> FLY <span class="up">#23</span> UL <span class="up">#49</span> <span class="up">▲ 박사행→BOTH</span></span>
+        <span class="tk"><b>전룡</b> UL <span class="fl">#52</span> ELE <span class="up">#16</span>(M)</span>
+        <span class="tk"><b>메가가디안</b> FAI <span class="up">#1</span></span>
+        <span class="tk"><b>메가헬가</b> DRK <span class="up">#1</span></span>
+        <span class="tk"><b>메가번치코</b> FIR <span class="up">#3</span> FGT <span class="up">#2</span></span>
+        <span class="tk"><b>가로막구리</b> GL <span class="dn">#659</span> <span class="dn">▼ PVP→박사행</span></span>
+        <span class="tk"><b>이븐곰</b> UL <span class="dn">#488</span> <span class="dn">▼ PVP→박사행</span></span>
+        <span class="tk"><b>그림자 라플레시아</b> GRS <span class="dn">50위 밖</span> <span class="dn">▼ RAID→박사행</span></span>
+        <span class="tk"><b>아머까오</b> <span class="fl">★★ 에어커터·아이언헤드 특별한 머신 2개</span></span>
+        <span class="tk"><b>왕큰부리</b> <span class="fl">★ 부리캐논 필수</span></span>
+        <span class="tk"><b>파비코리</b> GL <span class="up">#2</span> <span class="fl">★ 문포스</span></span>
+        <span class="tk"><b>장크로다일</b> UL <span class="up">#14</span>(S) GL <span class="up">#30</span> <span class="fl">★ 하이드로캐논</span></span>
+        <span class="tk"><b>메가마폭시</b> FIR <span class="up">#1</span></span>
+        <span class="tk"><b>메가브리가론</b> GRS <span class="up">#1</span></span>
+        <span class="tk"><b>칼라마네로</b> GL <span class="up">#42</span></span>
+        <span class="tk"><b>솜솜코</b> GL <span class="fl">#55</span></span>
+        <span class="tk"><b>두빅굴</b> GL <span class="fl">#83</span> UL <span class="fl">#58</span></span>
+    </div>
+</div>
+
+<main class="wrap">
+
+    <!-- NOTES -->
+    <section class="panel">
+        <div class="panel-head">IV SCREEN <span class="sub">개체값 선별 기준 · 순위 색상 범례</span></div>
+        <div class="notes">
+            <div>
+                <div class="k">RAID / MASTER</div>
+                <div class="v">공격 <b>14~15</b> 포함 3성 이상 <small>(최고 15/15/15)</small></div>
+            </div>
+            <div>
+                <div class="k">GREAT / ULTRA</div>
+                <div class="v">공격 <b>0~2</b> · 방어 <b>13~15</b> · 체력 <b>13~15</b> <small>(공낮방체높)</small></div>
+            </div>
+            <div>
+                <div class="k">TRANSFER</div>
+                <div class="v">도감에 최종 진화형 1마리 등록 후 전량 박사행 <small>(가방 칸 확보)</small></div>
+            </div>
+            <div>
+                <div class="k">TM LEGEND — 기술머신</div>
+                <div class="legend">
+                    <span class="mv f">빠른 기술</span>
+                    <span class="mv c">차지 기술</span>
+                    <span class="mv c e">레거시</span>
+                    <span>F = <b style="color:var(--cyan)">일반기술머신</b>(노멀)로 변경 · C = <b style="color:var(--blue)">특수기술머신</b>(스페셜)로 변경 · ★ = <b style="color:var(--amber)">특별한 기술머신</b> 필수 (일반 머신으로는 절대 안 나옴 · 커뮤니티데이/이벤트 중 진화하면 무료)</span>
+                </div>
+            </div>
+            <div>
+                <div class="k">RANK LEGEND</div>
+                <div class="legend">
+                    <span class="rk g">≤ 50</span>
+                    <span class="rk a">51–200</span>
+                    <span class="rk r">201+</span>
+                    <span class="rk n">— n/a</span>
+                    <span>GL 슈퍼(1,146종) · UL 하이퍼(844) · ML 마스터(406) · 타입별 레이드 딜러 순위 · (S)=그림자 (M)=메가</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="no-result" id="noResult" hidden>NO MATCH — 검색 결과가 없습니다.</div>
+
+    <!-- ── 1. BOTH ─────────────────────────────────────────── -->
+    <section class="panel" id="s1">
+        <div class="panel-head">1) BOTH — 레이드 + 배틀리그 겸용 <span class="sub">공15 3성 1마리 + 공낮방체높 1마리, 두 종류 보관</span></div>
+        <div class="panel-note">기준: 타입별 레이드 딜러 <b>50위 이내</b>이면서 배틀리그 어느 한 리그 <b>100위 이내</b>. 기술은 RAID용 / PVP용을 따로 세팅.</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>포켓몬</th>
+                    <th>레이드 (타입 순위)</th>
+                    <th>GL</th>
+                    <th>UL</th>
+                    <th>ML</th>
+                    <th>기술 세팅 (기술머신)</th>
+                    <th>메모</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>딥상어동</b><span class="evo">→ 한카리아스</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>DRG</small>#21</span><span class="rk g"><small>DRG(S)</small>#7</span><span class="rk g"><small>DRG(M)</small>#5</span></td>
+                    <td class="num" data-label="GL"><span class="rk r">#480</span></td>
+                    <td class="num" data-label="UL"><span class="rk r">#321</span></td>
+                    <td class="num" data-label="ML"><span class="rk g">#25 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">RAID</span><span class="mv f">드래곤테일</span><span class="mv c">역린</span><span class="mv c e">대지의힘</span></div>
+                        <div class="mvrow"><span class="lbl">ML</span><span class="mv f">드래곤테일</span><span class="mv c">회오리</span><span class="mv c e">대지의힘</span></div>
+                        <div class="tmnote">★ 대지의힘 = 특별한 특수기술머신 (커뮤니티데이 기술). 드래곤 딜만 쓸 거면 역린으로 충분</div>
+                    </td>
+                    <td class="memo" data-label="메모">600족 드래곤/땅. 반짝반짝 교환 1순위. 배틀리그는 <b>마스터리그 전용</b>(공15 풀강). 슈퍼/하이퍼용 공낮 개체는 불필요.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>망키</b><span class="evo">→ 저승갓숭</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>FGT(S)</small>#33</span><span class="rk g"><small>GHO(S)</small>#29</span></td>
+                    <td class="num" data-label="GL"><span class="rk g">#31</span></td>
+                    <td class="num" data-label="UL"><span class="rk a">#59</span></td>
+                    <td class="num" data-label="ML"><span class="rk a">#91 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">RAID</span><span class="mv f">카운터</span><span class="mv c e">분노의주먹</span><span class="mv c">섀도볼</span></div>
+                        <div class="mvrow"><span class="lbl">PVP</span><span class="mv f">로킥</span><span class="mv c e">분노의주먹</span><span class="mv c">냉동펀치</span></div>
+                        <div class="tmnote">★ 분노의주먹 = 특별한 특수기술머신 필요 (이벤트 진화 시 무료). 없으면 인파이트로 대체</div>
+                    </td>
+                    <td class="memo" data-label="메모">고스트 30마리 배틀 후 진화. 격투/고스트 딜탱. 레이드는 <b>그림자 개체</b>일 때만 50위 안(일반은 밖).</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>메리프</b><span class="evo">→ 전룡 / 메가전룡</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>ELE(M)</small>#16</span><span class="rk g"><small>DRK(M)</small>#24</span></td>
+                    <td class="num" data-label="GL"><span class="rk r">#217</span></td>
+                    <td class="num" data-label="UL"><span class="rk a">#52</span></td>
+                    <td class="num" data-label="ML"><span class="rk r">#269</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">RAID</span><span class="mv f">볼트체인지</span><span class="mv c">전자포</span><span class="mv c">브루탈스윙</span></div>
+                        <div class="mvrow"><span class="lbl">PVP</span><span class="mv f">볼트체인지</span><span class="mv c">브루탈스윙</span><span class="mv c">트레일블레이즈</span></div>
+                        <div class="tmnote ok">✓ 전부 일반/특수 기술머신으로 변경 가능</div>
+                    </td>
+                    <td class="memo" data-label="메모">메가전룡 = 전기 셔틀 + 악 딜러. 전룡 자체도 <b>하이퍼 52위</b>. 사탕 25+100.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>콕코구리</b><span class="evo">→ 왕큰부리</span><span class="tag up">▲ 박사행→BOTH</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>FLY</small>#23</span><span class="rk g"><small>FLY(S)</small>#11</span></td>
+                    <td class="num" data-label="GL"><span class="rk a">#137</span></td>
+                    <td class="num" data-label="UL"><span class="rk g">#49</span></td>
+                    <td class="num" data-label="ML"><span class="rk n">—</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">RAID</span><span class="mv f">쪼기</span><span class="mv c e">부리캐논</span></div>
+                        <div class="mvrow"><span class="lbl">PVP</span><span class="mv f">쪼기</span><span class="mv c e">부리캐논</span><span class="mv c">드릴라이너</span></div>
+                        <div class="tmnote">★ 부리캐논 없으면 레이드·PVP 모두 가치 없음 — 특별한 특수기술머신 1개 확보 필수</div>
+                    </td>
+                    <td class="memo" data-label="메모">비행 딜러로 찌르호크(28위)보다 위. 사탕 25+50.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>보송송</b><span class="evo">→ 파비코리 / 메가파비코리</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>FAI(M)</small>#28</span></td>
+                    <td class="num" data-label="GL"><span class="rk g">#2</span></td>
+                    <td class="num" data-label="UL"><span class="rk r">#272</span></td>
+                    <td class="num" data-label="ML"><span class="rk n">—</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">PVP</span><span class="mv f">용의숨결</span><span class="mv c e">문포스</span><span class="mv c">화염방사</span></div>
+                        <div class="mvrow"><span class="lbl">RAID</span><span class="mv f">용의숨결</span><span class="mv c e">문포스</span></div>
+                        <div class="tmnote">★ 문포스 = 특별한 특수기술머신 (커뮤니티데이 기술). 없으면 매지컬샤인으로 대체(하락). 사탕 400개 주의</div>
+                    </td>
+                    <td class="memo" data-label="메모"><b>슈퍼리그 2위.</b> 드래곤/비행 탱커. 메가파비코리는 페어리 28위 — 셔틀 겸용. 공낮 개체 최우선 확보.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>턱지충이</b><span class="evo">→ 전지충이 / 투구뿌논</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>BUG</small>#19</span><span class="rk g"><small>BUG(S)</small>#6</span><span class="rk g"><small>ELE(S)</small>#23</span></td>
+                    <td class="num" data-label="GL"><span class="rk g">#41 <small>전지충이</small></span></td>
+                    <td class="num" data-label="UL"><span class="rk n">—</span></td>
+                    <td class="num" data-label="ML"><span class="rk r">#208 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">PVP</span><span class="mv f e">볼트체인지</span><span class="mv c">시저크로스</span><span class="mv c">방전</span></div>
+                        <div class="mvrow"><span class="lbl">RAID</span><span class="mv f">벌레먹기</span><span class="mv c">시저크로스</span></div>
+                        <div class="tmnote">★ 볼트체인지 = 특별한 <b>일반</b>기술머신 (PVP 전지충이용). 레이드 벌레 세팅은 일반 머신 OK. 전기 세팅도 볼트체인지★ 필요</div>
+                    </td>
+                    <td class="memo" data-label="메모">슈퍼리그는 <b>중간 진화형 전지충이</b>(41위)로 정지. 레이드는 투구뿌논(마그네틱 루어 진화) — 그림자면 벌레 6위.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>잉어킹</b><span class="evo">→ 갸라도스 / 메가갸라도스</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>WTR(M)</small>#7</span><span class="rk g"><small>WTR(S)</small>#19</span><span class="rk g"><small>DRK(M)</small>#14</span><span class="rk g"><small>WTR</small>#37</span></td>
+                    <td class="num" data-label="GL"><span class="rk r">#259 <small>(S)</small></span></td>
+                    <td class="num" data-label="UL"><span class="rk a">#67 <small>(S)</small></span></td>
+                    <td class="num" data-label="ML"><span class="rk g">#31 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">RAID</span><span class="mv f">폭포오르기</span><span class="mv c">하이드로펌프</span></div>
+                        <div class="mvrow"><span class="lbl">PVP</span><span class="mv f">용의숨결</span><span class="mv c e">아쿠아테일</span><span class="mv c">회오리</span></div>
+                        <div class="tmnote">레이드 세팅은 일반 머신 OK · ★ 아쿠아테일(PVP용) = 특별한 특수기술머신. 없으면 깨물어부수기로 대체</div>
+                    </td>
+                    <td class="memo" data-label="메모">메가갸라도스 = 물 7위 / 악 14위. <b>그림자 갸라도스</b>는 마스터 31위·하이퍼 67위. 사탕 400개.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>수댕이</b><span class="evo">→ 대검귀</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>WTR</small>#25</span><span class="rk g"><small>WTR(S)</small>#12</span></td>
+                    <td class="num" data-label="GL"><span class="rk a">#105</span></td>
+                    <td class="num" data-label="UL"><span class="rk a">#65</span></td>
+                    <td class="num" data-label="ML"><span class="rk r">#231</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">RAID</span><span class="mv f">폭포오르기</span><span class="mv c e">하이드로캐논</span></div>
+                        <div class="mvrow"><span class="lbl">PVP</span><span class="mv f">연속자르기</span><span class="mv c e">하이드로캐논</span><span class="mv c">메가혼</span></div>
+                        <div class="tmnote">★ 하이드로캐논 = 특별한 특수기술머신 (커뮤니티데이 기술). 레이드·PVP 공통 필수</div>
+                    </td>
+                    <td class="memo" data-label="메모">하이퍼 65위 / 슈퍼 105위. 그림자면 물 딜러 12위. 스타팅 도감작 겸용.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>리아코</b><span class="evo">→ 장크로다일</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>WTR</small>#27</span><span class="rk g"><small>WTR(S)</small>#11</span></td>
+                    <td class="num" data-label="GL"><span class="rk g">#30</span></td>
+                    <td class="num" data-label="UL"><span class="rk g">#14 <small>(S)</small></span></td>
+                    <td class="num" data-label="ML"><span class="rk a">#164 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">RAID</span><span class="mv f">폭포오르기</span><span class="mv c e">하이드로캐논</span></div>
+                        <div class="mvrow"><span class="lbl">PVP</span><span class="mv f">섀도클로</span><span class="mv c e">하이드로캐논</span><span class="mv c">냉동빔</span></div>
+                        <div class="tmnote">★ 하이드로캐논 = 특별한 특수기술머신 (커뮤니티데이 기술). 없으면 PVP·레이드 모두 가치 급락</div>
+                    </td>
+                    <td class="memo" data-label="메모"><b>하이퍼 14위(그림자) / 슈퍼 30위.</b> 물 딜러 11위(그림자). 스타팅 중 최고 가성비 — 공낮·공15 둘 다 확보.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>롱스톤</b><span class="evo">→ 강철톤 / 메가강철톤</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>STL(M)</small>#42</span></td>
+                    <td class="num" data-label="GL"><span class="rk a">#87 <small>(S)</small></span></td>
+                    <td class="num" data-label="UL"><span class="rk g">#44</span></td>
+                    <td class="num" data-label="ML"><span class="rk r">#301 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">GL</span><span class="mv f">번개엄니</span><span class="mv c">사이코팽</span><span class="mv c">깨물어부수기</span></div>
+                        <div class="mvrow"><span class="lbl">UL</span><span class="mv f">번개엄니</span><span class="mv c">사이코팽</span><span class="mv c">지진</span></div>
+                        <div class="mvrow"><span class="lbl">RAID</span><span class="mv f">아이언테일</span><span class="mv c">헤비봄버</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신</div>
+                    </td>
+                    <td class="memo" data-label="메모"><b>하이퍼 44위</b> / 슈퍼 87위(그림자). 메가강철톤은 강철 42위로 셔틀 수준 — 사실상 PVP 위주. 메탈코트 필요.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>깝질무</b><span class="evo">→ 드래피온</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>PSN(S)</small>#31</span></td>
+                    <td class="num" data-label="GL"><span class="rk a">#99 <small>(S)</small></span></td>
+                    <td class="num" data-label="UL"><span class="rk a">#90</span></td>
+                    <td class="num" data-label="ML"><span class="rk n">—</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">PVP</span><span class="mv f">독침</span><span class="mv c">깨물어부수기</span><span class="mv c">아쿠아테일</span></div>
+                        <div class="mvrow"><span class="lbl">RAID</span><span class="mv f">독침</span><span class="mv c">오물폭탄</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신</div>
+                    </td>
+                    <td class="memo" data-label="메모">독/악 탱커. 슈퍼 99위(그림자) / 하이퍼 90위. 레이드는 <b>그림자</b>만 독 31위(일반은 밖).</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>토게피</b><span class="evo">→ 토게틱 / 토게키스</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>FAI</small>#13</span></td>
+                    <td class="num" data-label="GL"><span class="rk a">#166</span></td>
+                    <td class="num" data-label="UL"><span class="rk a">#61</span></td>
+                    <td class="num" data-label="ML"><span class="rk a">#58</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">RAID</span><span class="mv f">애교부리기</span><span class="mv c">매지컬샤인</span></div>
+                        <div class="mvrow"><span class="lbl">PVP</span><span class="mv f">쪼기</span><span class="mv c">사이코쇼크</span><span class="mv c e">파동탄</span></div>
+                        <div class="tmnote">레이드 세팅은 일반 머신 OK · ★ 파동탄(PVP용) = 특별한 특수기술머신. 없으면 제비반환/매지컬샤인으로 대체</div>
+                    </td>
+                    <td class="memo" data-label="메모">페어리 딜러 13위 (비메가·비전설 중 최상위). 하이퍼 61위 / 마스터 58위. 신오의돌 필요.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ── 2. RAID ─────────────────────────────────────────── -->
+    <section class="panel" id="s2">
+        <div class="panel-head">2) RAID — 레이드 / 메가진화 전용 <span class="sub">공14~15 3성 1~2마리만 보관, 공낮 개체는 박사행</span></div>
+        <div class="panel-note">기준: 타입별 레이드 딜러 <b>50위 이내</b>(메가/그림자 포함), 배틀리그는 전 리그 100위 밖.</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>포켓몬</th>
+                    <th>레이드 (타입 순위)</th>
+                    <th>PVP 최고</th>
+                    <th>기술 세팅 (기술머신)</th>
+                    <th>메모</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>랄토스</b><span class="evo">→ 가디안 / 엘레이드</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>FAI(M)</small>#1</span><span class="rk g"><small>PSY(M)</small>#8</span><span class="rk g"><small>FAI(S)</small>#6</span><span class="rk g"><small>엘레이드 FGT(M)</small>#6</span></td>
+                    <td class="num" data-label="PVP"><span class="rk a">ML #153 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">가디안</span><span class="mv f">애교부리기</span><span class="mv c">매지컬샤인</span></div>
+                        <div class="mvrow"><span class="lbl">엘레이드</span><span class="mv f">애교부리기</span><span class="mv c">성스러운칼</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신 (싱크로노이즈만 레거시인데 불필요)</div>
+                    </td>
+                    <td class="memo" data-label="메모"><b>메가가디안 = 페어리 1위.</b> 메가엘레이드는 페어리 3위·격투 6위·에스퍼 7위. 배틀리그는 GL 288 / UL 309 → 공낮 개체 박사행.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>델빌</b><span class="evo">→ 헬가 / 메가헬가</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>DRK(M)</small>#1</span><span class="rk g"><small>FIR(M)</small>#23</span></td>
+                    <td class="num" data-label="PVP"><span class="rk a">GL #144 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">악</span><span class="mv f">바크아웃</span><span class="mv c">속임수</span></div>
+                        <div class="mvrow"><span class="lbl">불꽃</span><span class="mv f">불꽃엄니</span><span class="mv c">화염방사</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신. (악의파동은 아직 미출시 예정 기술)</div>
+                    </td>
+                    <td class="memo" data-label="메모"><b>메가헬가 = 악 딜러 1위.</b> 악 사탕 셔틀. 그림자 헬가 단독은 34위.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>아차모</b><span class="evo">→ 번치코 / 메가번치코</span><span class="tag down">▼ BOTH→RAID</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>FIR(M)</small>#3</span><span class="rk g"><small>FGT(M)</small>#2</span><span class="rk g"><small>FIR(S)</small>#20</span><span class="rk g"><small>FGT(S)</small>#11</span></td>
+                    <td class="num" data-label="PVP"><span class="rk r">GL #239 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">불꽃</span><span class="mv f">회오리불꽃</span><span class="mv c e">블라스트번</span></div>
+                        <div class="mvrow"><span class="lbl">격투</span><span class="mv f">카운터</span><span class="mv c">파동탄</span></div>
+                        <div class="tmnote">★ 블라스트번 = 특별한 특수기술머신 (커뮤니티데이 기술). 격투 세팅은 일반 머신으로 OK</div>
+                    </td>
+                    <td class="memo" data-label="메모">불꽃·격투 양쪽 메가 최상위. 배틀리그는 GL 239 / UL 170 → 공낮 개체 박사행.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>드니차</b><span class="evo">→ 드닐레이브</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>ICE</small>#8</span><span class="rk g"><small>DRG</small>#10</span></td>
+                    <td class="num" data-label="PVP"><span class="rk a">ML #75</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">얼음</span><span class="mv f">얼음엄니</span><span class="mv c">눈사태</span></div>
+                        <div class="mvrow"><span class="lbl">드래곤</span><span class="mv f">용의숨결</span><span class="mv c">역린</span></div>
+                        <div class="mvrow"><span class="lbl">ML</span><span class="mv f">용의숨결</span><span class="mv c e">글레이브러시</span><span class="mv c">눈사태</span></div>
+                        <div class="tmnote">레이드 세팅은 일반 머신 OK · ★ 글레이브러시(마스터리그용)만 특별한 특수기술머신</div>
+                    </td>
+                    <td class="memo" data-label="메모">9세대 600족 얼음/드래곤. 비전설·비메가 중 얼음 최상위. 똥개체도 교환용 킵.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>코일</b><span class="evo">→ 자포코일</span><span class="tag down">▼ BOTH→RAID</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>ELE(S)</small>#15</span><span class="rk g"><small>ELE</small>#27</span></td>
+                    <td class="num" data-label="PVP"><span class="rk a">ML #180 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">RAID</span><span class="mv f">볼트체인지</span><span class="mv c">와일드볼트</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신 (스파크도 동급)</div>
+                    </td>
+                    <td class="memo" data-label="메모">마그네틱 루어 근처에서 진화. 배틀리그는 GL 359 / UL 281 / ML 180 → 공낮 개체 박사행.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>알통몬</b><span class="evo">→ 괴력몬</span><span class="tag down">▼ BOTH→RAID</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>FGT(S)</small>#22</span><span class="rk g"><small>FGT</small>#42</span></td>
+                    <td class="num" data-label="PVP"><span class="rk a">UL #171 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">RAID</span><span class="mv f">카운터</span><span class="mv c">폭발펀치</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신 (태권당수·스톤에지·앙갚음은 레거시지만 불필요)</div>
+                    </td>
+                    <td class="memo" data-label="메모">그림자 괴력몬 격투 22위. 배틀리그 GL 194 / UL 171 → 그림자 공15 1마리만.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>어둠대신</b><span class="evo">진화 없음 / 메가앱솔</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>DRK(M)</small>#8</span><span class="rk g"><small>DRK(S)</small>#30</span><span class="rk g"><small>DRK</small>#46</span></td>
+                    <td class="num" data-label="PVP"><span class="rk r">GL #669 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">RAID</span><span class="mv f">바크아웃</span><span class="mv c e">브루탈스윙</span></div>
+                        <div class="mvrow"><span class="lbl">대체</span><span class="mv f">바크아웃</span><span class="mv c">악의파동</span></div>
+                        <div class="tmnote">★ 브루탈스윙 = 특별한 특수기술머신 (이벤트 기술). 없으면 악의파동으로 대체 가능 (딜 소폭 하락)</div>
+                    </td>
+                    <td class="memo" data-label="메모">메가앱솔 = 악 8위. 야생 고CP 공15 3성 1마리만, 나머지 박사행.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>염버니</b><span class="evo">→ 에이스번</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>FIR</small>#29</span></td>
+                    <td class="num" data-label="PVP"><span class="rk r">UL #398</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">RAID</span><span class="mv f">회오리불꽃</span><span class="mv c e">블라스트번</span></div>
+                        <div class="mvrow"><span class="lbl">대체</span><span class="mv f">회오리불꽃</span><span class="mv c">화염볼</span></div>
+                        <div class="tmnote">★ 블라스트번 = 특별한 특수기술머신 (커뮤니티데이 기술). 없으면 화염볼(1게이지)로 대체 — 순위 하락</div>
+                    </td>
+                    <td class="memo" data-label="메모">메가·그림자·전설 제외 시 불꽃 최상위 — 일반 번치코(35)·샹델라(47)보다 위. 배틀리그 가치 없음.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>불켜미</b><span class="evo">→ 샹델라</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>GHO(S)</small>#9</span><span class="rk g"><small>GHO</small>#20</span><span class="rk g"><small>FIR(S)</small>#27</span><span class="rk g"><small>FIR</small>#47</span></td>
+                    <td class="num" data-label="PVP"><span class="rk a">ML #167</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">고스트</span><span class="mv f">병상첨병</span><span class="mv c">섀도볼</span></div>
+                        <div class="mvrow"><span class="lbl">불꽃</span><span class="mv f">회오리불꽃</span><span class="mv c">오버히트</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신 (폴터가이스트는 레거시지만 불필요)</div>
+                    </td>
+                    <td class="memo" data-label="메모">하나의돌 필요. <b>고스트 딜러</b>로서 가치가 더 큼. 그림자 개체 우선.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>찌르꼬</b><span class="evo">→ 찌르호크 / 메가찌르호크</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>FLY(M)</small>#2</span><span class="rk g"><small>FLY(S)</small>#17</span><span class="rk g"><small>FLY</small>#28</span></td>
+                    <td class="num" data-label="PVP"><span class="rk r">GL #710</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">최적</span><span class="mv f e">돌풍</span><span class="mv c">공중날기</span></div>
+                        <div class="mvrow"><span class="lbl">메가</span><span class="mv f">날개치기</span><span class="mv c">브레이브버드</span></div>
+                        <div class="tmnote">★ 돌풍 = 특별한 <b>일반</b>기술머신 (커뮤니티데이 기술). 메가는 날개치기+브레이브버드로 충분 → 일반 머신 OK</div>
+                    </td>
+                    <td class="memo" data-label="메모"><b>메가찌르호크 = 비행 2위.</b> 야생 고CP 3성 진화해 모래 0원 투입. 메가용 공15 3성 1마리 확보.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>야돈</b><span class="evo">→ 야도란 / 메가야도란</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>WTR(M)</small>#33</span><span class="rk g"><small>PSY(M)</small>#43</span></td>
+                    <td class="num" data-label="PVP"><span class="rk r">UL #209 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">물</span><span class="mv f">물대포</span><span class="mv c e">파도타기</span></div>
+                        <div class="mvrow"><span class="lbl">에스퍼</span><span class="mv f">염동력</span><span class="mv c">사이코키네시스</span></div>
+                        <div class="tmnote">★ 파도타기 = 특별한 특수기술머신. 셔틀 용도라면 에스퍼 세팅(일반 머신)으로 충분</div>
+                    </td>
+                    <td class="memo" data-label="메모">반드시 '야도란'으로 진화. 딜은 하위권 → <b>사탕 셔틀 용도</b>로만 1마리.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>샤프니아</b><span class="evo">→ 샤크니아 / 메가샤크니아</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>DRK(M)</small>#37</span><span class="rk g"><small>WTR(M)</small>#41</span></td>
+                    <td class="num" data-label="PVP"><span class="rk r">GL #778 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">악</span><span class="mv f">물기</span><span class="mv c">깨물어부수기</span></div>
+                        <div class="mvrow"><span class="lbl">물</span><span class="mv f">폭포오르기</span><span class="mv c">하이드로펌프</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신</div>
+                    </td>
+                    <td class="memo" data-label="메모">메가도 악 37위 / 물 41위. <b>사탕 셔틀 외 가치 낮음.</b> 1마리만.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>푸호꼬</b><span class="evo">→ 마폭시 / 메가마폭시</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>FIR(M)</small>#1</span><span class="rk g"><small>FIR(S)</small>#11</span><span class="rk g"><small>FIR</small>#31</span><span class="rk g"><small>PSY(M)</small>#9</span></td>
+                    <td class="num" data-label="PVP"><span class="rk a">ML #144 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">RAID</span><span class="mv f">회오리불꽃</span><span class="mv c e">블라스트번</span></div>
+                        <div class="mvrow"><span class="lbl">메가</span><span class="mv f">회오리불꽃</span><span class="mv c">매지컬플레임</span></div>
+                        <div class="tmnote">★ 블라스트번 = 특별한 특수기술머신 (커뮤니티데이 기술). 메가는 매지컬플레임(일반 머신)이 최적</div>
+                    </td>
+                    <td class="memo" data-label="메모"><b>메가마폭시 = 불꽃 딜러 1위.</b> 그림자 11위, 일반도 31위. 배틀리그 GL 400 → 공낮 박사행.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>도치마론</b><span class="evo">→ 브리가론 / 메가브리가론</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>GRS(M)</small>#1</span><span class="rk g"><small>GRS(S)</small>#6</span><span class="rk g"><small>GRS</small>#18</span></td>
+                    <td class="num" data-label="PVP"><span class="rk a">ML #121 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">RAID</span><span class="mv f">덩굴채찍</span><span class="mv c e">하드플랜트</span></div>
+                        <div class="mvrow"><span class="lbl">메가</span><span class="mv f">덩굴채찍</span><span class="mv c">씨폭탄</span></div>
+                        <div class="tmnote">★ 하드플랜트 = 특별한 특수기술머신 (커뮤니티데이 기술). 메가는 씨폭탄(일반 머신)이 최적</div>
+                    </td>
+                    <td class="memo" data-label="메모"><b>메가브리가론 = 풀 딜러 1위.</b> 그림자 6위, 일반 18위. 배틀리그 GL 384 → 공낮 박사행.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>고오스</b><span class="evo">→ 고우스트 / 팬텀 / 메가팬텀</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>GHO(M)</small>#3</span><span class="rk g"><small>PSN(M)</small>#3</span><span class="rk g"><small>GHO(S)</small>#18</span><span class="rk g"><small>GHO</small>#26</span></td>
+                    <td class="num" data-label="PVP"><span class="rk r">UL #317 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">고스트</span><span class="mv f e">핥기</span><span class="mv c">섀도볼</span></div>
+                        <div class="mvrow"><span class="lbl">대체</span><span class="mv f">섀도클로</span><span class="mv c">섀도볼</span></div>
+                        <div class="mvrow"><span class="lbl">독</span><span class="mv f e">핥기</span><span class="mv c">오물폭탄</span></div>
+                        <div class="tmnote">★ 핥기 = 특별한 <b>일반</b>기술머신. 없으면 섀도클로(일반 머신)로 대체 — 차이 작음</div>
+                    </td>
+                    <td class="memo" data-label="메모"><b>메가팬텀 = 고스트 3위 / 독 3위.</b> 그림자 팬텀 18위. 배틀리그는 가치 없음.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>리오르</b><span class="evo">→ 루카리오 / 메가루카리오</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>FGT(M)</small>#3</span><span class="rk g"><small>STL(M)</small>#6</span><span class="rk g"><small>FGT</small>#15</span><span class="rk g"><small>STL</small>#29</span></td>
+                    <td class="num" data-label="PVP"><span class="rk r">UL #290</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">격투</span><span class="mv f">카운터</span><span class="mv c">파동탄</span></div>
+                        <div class="mvrow"><span class="lbl">강철</span><span class="mv f">불릿펀치</span><span class="mv c">코멧펀치</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신 (발경만 레거시인데 PVP용이라 불필요)</div>
+                    </td>
+                    <td class="memo" data-label="메모"><b>메가루카리오 = 격투 3위.</b> 일반도 격투 15위(비메가·비그림자 중 최상위). 알 부화 전용 — 공15 3성은 반드시 보관.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>개구마르</b><span class="evo">→ 개굴반장 / 개굴닌자 / 메가개굴닌자</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>WTR(M)</small>#2</span><span class="rk g"><small>DRK(M)</small>#7</span><span class="rk g"><small>WTR(S)</small>#13</span><span class="rk g"><small>WTR</small>#23</span></td>
+                    <td class="num" data-label="PVP"><span class="rk a">UL #107 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">물</span><span class="mv f">물수리검</span><span class="mv c e">하이드로캐논</span></div>
+                        <div class="mvrow"><span class="lbl">악</span><span class="mv f">속여때리기</span><span class="mv c">브루탈스윙</span></div>
+                        <div class="tmnote">★ 하이드로캐논 = 특별한 특수기술머신 (커뮤니티데이 기술). 악 세팅은 일반 머신 OK</div>
+                    </td>
+                    <td class="memo" data-label="메모"><b>메가개굴닌자 = 물 2위 / 악 7위.</b> 배틀리그 GL 128 / UL 107(그림자)로 경계선 — 여유 있으면 공낮 1마리 서브픽.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>캐이시</b><span class="evo">→ 윤겔라 / 후딘 / 메가후딘</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>PSY(M)</small>#4</span><span class="rk g"><small>FAI(M)</small>#4</span><span class="rk g"><small>PSY(S)</small>#35</span><span class="rk g"><small>PSY</small>#49</span></td>
+                    <td class="num" data-label="PVP"><span class="rk r">ML #290 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">에스퍼</span><span class="mv f">사이코커터</span><span class="mv c e">사이코키네시스</span></div>
+                        <div class="mvrow"><span class="lbl">대체</span><span class="mv f">사이코커터</span><span class="mv c">미래예지</span></div>
+                        <div class="mvrow"><span class="lbl">페어리</span><span class="mv f">사이코커터</span><span class="mv c e">매지컬샤인</span></div>
+                        <div class="tmnote">★ 사이코키네시스·매지컬샤인 둘 다 특별한 특수기술머신. 없으면 미래예지(일반 머신)로 대체</div>
+                    </td>
+                    <td class="memo" data-label="메모"><b>메가후딘 = 에스퍼 4위 / 페어리 4위.</b> 일반은 49위로 메가 전용. 배틀리그 가치 없음.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>뿔충이</b><span class="evo">→ 딱충이 / 독침붕 / 메가독침붕</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>BUG(M)</small>#2</span><span class="rk g"><small>PSN(M)</small>#6</span></td>
+                    <td class="num" data-label="PVP"><span class="rk r">GL #529 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">벌레</span><span class="mv f e">벌레먹기</span><span class="mv c">시저크로스</span></div>
+                        <div class="mvrow"><span class="lbl">독</span><span class="mv f">독찌르기</span><span class="mv c">오물폭탄</span></div>
+                        <div class="tmnote">★ 벌레먹기 = 특별한 <b>일반</b>기술머신. 독 세팅은 일반 머신 OK</div>
+                    </td>
+                    <td class="memo" data-label="메모"><b>메가독침붕 = 벌레 2위 / 독 6위.</b> 일반 독침붕은 50위 밖 → 메가 전용 1마리만.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>두더류</b><span class="evo">→ 몰드류</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>GRD(S)</small>#8</span><span class="rk g"><small>GRD</small>#16</span><span class="rk g"><small>STL(S)</small>#13</span><span class="rk g"><small>STL</small>#32</span></td>
+                    <td class="num" data-label="PVP"><span class="rk a">ML #155 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">땅</span><span class="mv f">진흙뿌리기</span><span class="mv c">드릴라이너</span></div>
+                        <div class="mvrow"><span class="lbl">강철</span><span class="mv f">메탈크로우</span><span class="mv c">아이언헤드</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신</div>
+                    </td>
+                    <td class="memo" data-label="메모">땅 딜러 16위(그림자 8위) — 비전설·비메가 땅 최상위. 배틀리그 GL 457 → 공낮 박사행.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>냐오불</b><span class="evo">→ 어흥염</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>DRK</small>#22</span><span class="rk g"><small>FIR</small>#37</span></td>
+                    <td class="num" data-label="PVP"><span class="rk r">UL #218</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">악</span><span class="mv f">바크아웃</span><span class="mv c">다크래리어트</span></div>
+                        <div class="mvrow"><span class="lbl">불꽃</span><span class="mv f">불꽃엄니</span><span class="mv c e">블라스트번</span></div>
+                        <div class="tmnote">악 세팅은 일반 머신 OK · ★ 블라스트번(불꽃용) = 특별한 특수기술머신. 악 딜러로만 써도 충분</div>
+                    </td>
+                    <td class="memo" data-label="메모">악 딜러 22위 (비메가·비그림자 중 상위). 배틀리그 GL 402 / UL 218 → 공낮 박사행.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>가보리</b><span class="evo">→ 갱도라 / 보스로라 / 메가보스로라</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>STL(M)</small>#19</span><span class="rk g"><small>RCK(S)</small>#21</span><span class="rk g"><small>RCK(M)</small>#29</span><span class="rk g"><small>STL(S)</small>#36</span></td>
+                    <td class="num" data-label="PVP"><span class="rk a">ML #158</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">바위</span><span class="mv f">스맥다운</span><span class="mv c">스톤에지</span></div>
+                        <div class="mvrow"><span class="lbl">강철</span><span class="mv f">아이언테일</span><span class="mv c">헤비봄버</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신</div>
+                    </td>
+                    <td class="memo" data-label="메모">메가보스로라 강철 19위, 그림자 보스로라 바위 21위. 일반은 바위 43위. 사탕 25+100.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>구구</b><span class="evo">→ 피죤 / 피죤투 / 메가피죤투</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>FLY(M)</small>#22</span></td>
+                    <td class="num" data-label="PVP"><span class="rk r">GL #220</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">메가</span><span class="mv f e">돌풍</span><span class="mv c">브레이브버드</span></div>
+                        <div class="mvrow"><span class="lbl">대체</span><span class="mv f">에어슬래시</span><span class="mv c">브레이브버드</span></div>
+                        <div class="tmnote">★ 돌풍 = 특별한 <b>일반</b>기술머신 (커뮤니티데이 기술). 없으면 에어슬래시로 대체(소폭 하락)</div>
+                    </td>
+                    <td class="memo" data-label="메모">메가피죤투 = 비행 22위. 일반 피죤투는 50위 밖 → 메가 전용 1마리만. 사탕 12+50.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>꼬마돌</b><span class="evo">→ 데구리 / 딱구리 (일반·알로라)</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>RCK 알로라</small>#23</span><span class="rk g"><small>RCK(S)</small>#24</span><span class="rk g"><small>GRD(S)</small>#27</span><span class="rk g"><small>ELE 알로라(S)</small>#19</span></td>
+                    <td class="num" data-label="PVP"><span class="rk r">GL #524</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">바위</span><span class="mv f">돌떨구기</span><span class="mv c">스톤에지</span></div>
+                        <div class="mvrow"><span class="lbl">땅</span><span class="mv f">진흙뿌리기</span><span class="mv c">지진</span></div>
+                        <div class="mvrow"><span class="lbl">알로라</span><span class="mv f">볼트체인지</span><span class="mv c">와일드볼트</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신 (알로라 딱구리 구르기만 레거시인데 불필요)</div>
+                    </td>
+                    <td class="memo" data-label="메모">알로라 딱구리 바위 23위 / 그림자 딱구리 바위 24위·땅 27위. 일반 딱구리는 바위 50위. 배틀리그 가치 없음.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>울머기</b><span class="evo">→ 독개굴</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>PSN(S)</small>#12</span><span class="rk g"><small>PSN</small>#27</span></td>
+                    <td class="num" data-label="PVP"><span class="rk r">UL #267 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">RAID</span><span class="mv f">독찌르기</span><span class="mv c">오물폭탄</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신</div>
+                    </td>
+                    <td class="memo" data-label="메모">독 딜러 27위(그림자 12위). 격투는 50위 밖. 배틀리그 GL 487 → 공낮 박사행.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>브케인</b><span class="evo">→ 마그케인 / 블레이범</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>FIR(S)</small>#25</span><span class="rk n"><small>FIR</small>50위 밖</span></td>
+                    <td class="num" data-label="PVP"><span class="rk a">UL #197 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">RAID</span><span class="mv f">불태우기</span><span class="mv c e">블라스트번</span></div>
+                        <div class="tmnote">★ 블라스트번 = 특별한 특수기술머신 (커뮤니티데이 기술). 없으면 가치 없음</div>
+                    </td>
+                    <td class="memo" data-label="메모"><b>그림자 개체만</b> 불꽃 25위. 일반 블레이범은 50위 밖 → 일반 개체는 도감작 후 박사행.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>불꽃숭이</b><span class="evo">→ 파이숭이 / 초염몽</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="레이드"><span class="rk g"><small>FIR(S)</small>#28</span><span class="rk n"><small>FIR</small>50위 밖</span></td>
+                    <td class="num" data-label="PVP"><span class="rk r">UL #627</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">RAID</span><span class="mv f">회오리불꽃</span><span class="mv c e">블라스트번</span></div>
+                        <div class="tmnote">★ 블라스트번 = 특별한 특수기술머신 (커뮤니티데이 기술). 없으면 가치 없음</div>
+                    </td>
+                    <td class="memo" data-label="메모"><b>그림자 개체만</b> 불꽃 28위. 일반 초염몽은 불꽃·격투 모두 50위 밖 → 일반 개체는 박사행.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ── 3. PVP ──────────────────────────────────────────── -->
+    <section class="panel" id="s3">
+        <div class="panel-head">3) PVP — 배틀리그 전용 <span class="sub">공0~2 방체높 개체 1마리만 보관 · 레이드 미사용</span></div>
+        <div class="panel-note">기준: PvPoke 종합 랭킹 <b>GL 200위 이내 또는 UL 150위 이내</b>. 기술은 PvPoke 랭킹 기준 최적 세팅(빠른 1 + 차지 2).</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>포켓몬</th>
+                    <th>GL</th>
+                    <th>UL</th>
+                    <th>기술 세팅 (기술머신)</th>
+                    <th>메모</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>파라꼬</b><span class="evo">→ 아머까오</span></td>
+                    <td class="num" data-label="GL"><span class="rk g">#7</span></td>
+                    <td class="num" data-label="UL"><span class="rk g">#2</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="mv f">모래뿌리기</span><span class="mv c e">에어커터</span><span class="mv c e">아이언헤드</span></div>
+                        <div class="tmnote">★★ 차지 기술 <b>둘 다</b> 특별한 특수기술머신 필요 (총 2개). 없으면 불새·앙갚음으로 대체 → 순위 크게 하락. 이벤트 진화 기회 노릴 것</div>
+                    </td>
+                    <td class="memo" data-label="메모"><b>하이퍼 2위, 슈퍼 7위.</b> 강철/비행 무상성 탱커. 최우선 육성.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>훔처우</b><span class="evo">→ 폭슬라이</span><span class="tag up">▲ 박사행→PVP</span></td>
+                    <td class="num" data-label="GL"><span class="rk g">#15</span></td>
+                    <td class="num" data-label="UL"><span class="rk a">#164</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="mv f">기습</span><span class="mv c">깜짝베기</span><span class="mv c e">얼다바람</span></div>
+                        <div class="tmnote">★ 얼다바람 = 특별한 특수기술머신. 없으면 치근거리기로 대체(순위 하락)</div>
+                    </td>
+                    <td class="memo" data-label="메모"><b>슈퍼리그 15위.</b> 악 타입 디버퍼. 공낮 개체 반드시 킵.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>요가랑</b><span class="evo">→ 요가램</span></td>
+                    <td class="num" data-label="GL"><span class="rk a">#54</span></td>
+                    <td class="num" data-label="UL"><span class="rk n">—</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="mv f">사이코커터</span><span class="mv c">냉동펀치</span><span class="mv c">폭발펀치</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신 (현재 랭킹은 카운터보다 사이코커터가 위)</div>
+                    </td>
+                    <td class="memo" data-label="메모">격투/에스퍼 전통의 강자. XL 사탕 필요(레벨 50 근처).</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>통통코</b><span class="evo">→ 솜솜코</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="GL"><span class="rk a">#55</span></td>
+                    <td class="num" data-label="UL"><span class="rk r">#696</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="mv f">요정의바람</span><span class="mv c">에너지볼</span><span class="mv c e">애크러뱃</span></div>
+                        <div class="tmnote">★ 애크러뱃 = 특별한 특수기술머신. 없으면 제비반환으로 대체</div>
+                    </td>
+                    <td class="memo" data-label="메모">풀/비행 슈퍼리그 스탠다드. 하이퍼는 비추천.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>해골몽</b><span class="evo">→ 데스마스 / 야느와르몽</span><span class="tag up">▲ 박사행→PVP</span></td>
+                    <td class="num" data-label="GL"><span class="rk a">#70 <small>데스마스(S)</small></span></td>
+                    <td class="num" data-label="UL"><span class="rk g">#24 <small>야느와르몽</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">GL</span><span class="mv f">병상첨병</span><span class="mv c">냉동펀치</span><span class="mv c">섀도펀치</span></div>
+                        <div class="mvrow"><span class="lbl">UL</span><span class="mv f">놀래키기</span><span class="mv c">폭발펀치</span><span class="mv c">섀도펀치</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신 (섀도볼만 레거시인데 불필요)</div>
+                    </td>
+                    <td class="memo" data-label="메모"><b>야느와르몽 하이퍼 24위</b>(신오의돌 필요), 데스마스는 슈퍼 70위(그림자). 공낮 2마리(슈퍼용·하이퍼용) 확보.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>동챙이</b><span class="evo">→ 두빅굴</span></td>
+                    <td class="num" data-label="GL"><span class="rk a">#83</span></td>
+                    <td class="num" data-label="UL"><span class="rk a">#58</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="mv f">머드숏</span><span class="mv c">대지의힘</span><span class="mv c">얼다바람</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신 (현재 랭킹은 탁류보다 얼다바람이 위)</div>
+                    </td>
+                    <td class="memo" data-label="메모">땅/물 딜탱. 슈퍼·하이퍼 둘 다 실전급.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>화살꼬빈</b><span class="evo">→ 파이어로</span><span class="tag down">▼ BOTH→PVP</span></td>
+                    <td class="num" data-label="GL"><span class="rk a">#84</span></td>
+                    <td class="num" data-label="UL"><span class="rk g">#38</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="mv f e">불태우기</span><span class="mv c">공중날기</span><span class="mv c">브레이브버드</span></div>
+                        <div class="tmnote">★ 불태우기 = 특별한 <b>일반</b>기술머신 (커뮤니티데이 기술). 없으면 가치 급락</div>
+                    </td>
+                    <td class="memo" data-label="메모">레이드는 불꽃·비행 모두 50위 밖 → 겸용 아님. 하이퍼는 15/15/15 풀강.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>부르롱</b><span class="evo">→ 부르르룸 (라지 / 슈퍼)</span></td>
+                    <td class="num" data-label="GL"><span class="rk a">#88 <small>라지</small></span></td>
+                    <td class="num" data-label="UL"><span class="rk a">#188 <small>슈퍼사이즈</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="mv f">불태우기</span><span class="mv c">섀도볼</span><span class="mv c">씨폭탄</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신 (부르르룸은 불태우기가 일반 기술)</div>
+                    </td>
+                    <td class="memo" data-label="메모">12km 알 희귀종. 반감 9개 상성. 슈퍼는 라지 사이즈가 최적. 똥개체도 교환용 킵.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>푸린</b><span class="evo">→ 푸크린</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="GL"><span class="rk a">#109</span></td>
+                    <td class="num" data-label="UL"><span class="rk r">#608</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="mv f">애교부리기</span><span class="mv c">얼다바람</span><span class="mv c">스피드스타</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신</div>
+                    </td>
+                    <td class="memo" data-label="메모">노말/페어리. 드래곤·격투·악 카운터. 하이퍼는 비추천.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>또가스</b><span class="evo">→ 가라르또도가스</span></td>
+                    <td class="num" data-label="GL"><span class="rk a">#183 <small>(S)</small></span></td>
+                    <td class="num" data-label="UL"><span class="rk a">#116 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="mv f">요정의바람</span><span class="mv c">오물공격</span><span class="mv c">브루탈스윙</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신 (현재 랭킹은 오버히트보다 오물공격+브루탈스윙)</div>
+                    </td>
+                    <td class="memo" data-label="메모">독/페어리. 그림자 개체가 상위. 일반폼 또도가스는 박사행.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>나옹</b><span class="evo">→ 페르시온</span><span class="tag up">▲ 박사행→PVP</span></td>
+                    <td class="num" data-label="GL"><span class="rk a">#118</span></td>
+                    <td class="num" data-label="UL"><span class="rk n">—</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="mv f">할퀴기</span><span class="mv c e">깜짝베기</span><span class="mv c">파워젬</span></div>
+                        <div class="tmnote">★ 깜짝베기 = 특별한 특수기술머신. 서브픽에 특별한 머신 쓰긴 아까움 → 이벤트 때만</div>
+                    </td>
+                    <td class="memo" data-label="메모">일반 페르시온이 슈퍼 118위. 서브픽 — 공낮 1마리 정도만.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>슈쁘</b><span class="evo">→ 프레프티르</span><span class="tag up">▲ 박사행→PVP</span></td>
+                    <td class="num" data-label="GL"><span class="rk a">#119</span></td>
+                    <td class="num" data-label="UL"><span class="rk a">#82</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="mv f">요정의바람</span><span class="mv c">문포스</span><span class="mv c">사이코쇼크</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신</div>
+                    </td>
+                    <td class="memo" data-label="메모">향로 켜고 진화. 페어리 탱커, <b>하이퍼 82위</b>.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>메롱꿍</b><span class="evo">→ 쏘겨모 / 오롱털</span><span class="tag fix">FIX</span></td>
+                    <td class="num" data-label="GL"><span class="rk a">#121 <small>쏘겨모</small></span></td>
+                    <td class="num" data-label="UL"><span class="rk a">#151 <small>오롱털</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">쏘겨모</span><span class="mv f">기습</span><span class="mv c">속임수</span><span class="mv c">치근거리기</span></div>
+                        <div class="mvrow"><span class="lbl">오롱털</span><span class="mv f">기습</span><span class="mv c">속임수</span><span class="mv c">드레인키스</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신</div>
+                    </td>
+                    <td class="memo" data-label="메모">악/페어리. 슈퍼는 <b>중간 진화형 쏘겨모</b>가 오롱털(306위)보다 낫고, 하이퍼는 오롱털. 공낮 1마리씩.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>꼬이밍고</b><span class="evo">진화 없음</span></td>
+                    <td class="num" data-label="GL"><span class="rk a">#158</span></td>
+                    <td class="num" data-label="UL"><span class="rk a">#135</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="mv f">쪼기</span><span class="mv c">선의선(어퍼핸드)</span><span class="mv c">브레이브버드</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신 (현재 랭킹은 날개치기보다 쪼기가 위)</div>
+                    </td>
+                    <td class="memo" data-label="메모">비행/격투 유리대포. 슈퍼·하이퍼 조커.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>오라티프</b><span class="evo">→ 요씽리스</span><span class="tag up">▲ 박사행→PVP</span></td>
+                    <td class="num" data-label="GL"><span class="rk a">#184</span></td>
+                    <td class="num" data-label="UL"><span class="rk a">#148</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="mv f">물기</span><span class="mv c">누르기</span><span class="mv c">트레일블레이즈</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신</div>
+                    </td>
+                    <td class="memo" data-label="메모">노말 탱커 서브픽. 경계선 수준이라 공낮 1마리만.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>파쪼옥</b><span class="evo">→ 전툴라</span><span class="tag down">▼ 하향</span></td>
+                    <td class="num" data-label="GL"><span class="rk r">#391</span></td>
+                    <td class="num" data-label="UL"><span class="rk a">#182</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="mv f">볼트체인지</span><span class="mv c">덤벼들기</span><span class="mv c">방전</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신</div>
+                    </td>
+                    <td class="memo" data-label="메모">현재 슈퍼 391위. <b>하이퍼 서브픽</b>으로만 1마리.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>판짱</b><span class="evo">→ 부란다</span><span class="tag down">▼ 하향</span></td>
+                    <td class="num" data-label="GL"><span class="rk r">#246</span></td>
+                    <td class="num" data-label="UL"><span class="rk a">#196</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="mv f">태권당수</span><span class="mv c">인파이트</span><span class="mv c">깜짝베기</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신</div>
+                    </td>
+                    <td class="memo" data-label="메모">12km 알. 파트너 지정 후 악 32마리 포획해야 진화. 중위권(GL 246 / UL 196 / ML 179). 1마리만.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>오케이징</b><span class="evo">→ 칼라마네로</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="GL"><span class="rk g">#42</span></td>
+                    <td class="num" data-label="UL"><span class="rk a">#54 <small>(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="mv f">사이코웨이브</span><span class="mv c">배대뒤치기</span><span class="mv c">속임수</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신</div>
+                    </td>
+                    <td class="memo" data-label="메모"><b>슈퍼 42위 / 하이퍼 54위.</b> 악/에스퍼. 진화 시 <b>휴대폰을 뒤집어야</b> 진화 버튼 활성화. 사탕 50.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>맛보돈</b><span class="evo">→ 퍼퓨돈</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="GL"><span class="rk a">#113</span></td>
+                    <td class="num" data-label="UL"><span class="rk a">#77</span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="mv f">돌진</span><span class="mv c">누르기</span><span class="mv c">트레일블레이즈</span></div>
+                        <div class="tmnote ok">✓ 전부 일반 머신</div>
+                    </td>
+                    <td class="memo" data-label="메모">노말 탱커. 하이퍼 77위 / 슈퍼 113위. 레이드 가치 없음. 공낮 1마리.</td>
+                </tr>
+                <tr>
+                    <td class="name" data-label="포켓몬"><b>발챙이</b><span class="evo">→ 슈륙챙이 → 왕구리 / 강챙이</span><span class="tag new">NEW</span></td>
+                    <td class="num" data-label="GL"><span class="rk a">#124 <small>왕구리(S)</small></span></td>
+                    <td class="num" data-label="UL"><span class="rk a">#86 <small>왕구리(S)</small></span></td>
+                    <td class="mvs" data-label="기술">
+                        <div class="mvrow"><span class="lbl">GL</span><span class="mv f">머드숏</span><span class="mv c">웨더볼(물)</span><span class="mv c e">냉동빔</span></div>
+                        <div class="mvrow"><span class="lbl">UL</span><span class="mv f">머드숏</span><span class="mv c">웨더볼(물)</span><span class="mv c e">지진</span></div>
+                        <div class="tmnote">★ 냉동빔·지진 둘 다 특별한 특수기술머신 (커뮤니티데이 기술). 없으면 열탕/눈보라로 대체(하락)</div>
+                    </td>
+                    <td class="memo" data-label="메모"><b>왕구리</b>(왕의징표석 필요)가 하이퍼 86위. 강챙이는 GL 200위·격투 50위 밖 → 도감작만. 그림자 개체 우선.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ── 4. TRANSFER ─────────────────────────────────────── -->
+    <section class="panel" id="s4">
+        <div class="panel-head">4) XFER — 도감작 후 전량 박사행 <span class="sub">개체값 확인 불필요 · 진화형 1마리 등록 후 이송</span></div>
+        <div class="panel-note">기준: 레이드 타입 순위 50위 밖 <b>그리고</b> GL 200위 밖 / UL 150위 밖. 괄호는 최고 순위.</div>
+        <ul class="chips">
+            <li><span class="nm">콘팡<small>→ 도나리</small></span><span class="rk r">GL 647</span></li>
+            <li><span class="nm">무우마<small>→ 무우마직 (신오의돌 1회)</small></span><span class="rk r">GL 465</span></li>
+            <li><span class="nm">또르박쥐<small>→ 심보러 (파트너 1km)</small></span><span class="rk r">GL 523</span></li>
+            <li><span class="nm">쌔비냥<small>→ 레파르다스</small></span><span class="rk r">GL 998</span></li>
+            <li><span class="nm">치라미<small>→ 치라치노 (하나의돌 1회)</small></span><span class="rk r">GL 1034</span></li>
+            <li><span class="nm">바닐프티<small>→ 배바닐라</small></span><span class="rk r">GL 1047 · ICE 30</span></li>
+            <li><span class="nm">탐리스<small>→ 에리본</small></span><span class="rk r">GL 902</span></li>
+            <li><span class="nm">이어롤<small>→ 이어롭</small></span><span class="rk a">GL 198 (경계선)</span></li>
+            <li><span class="nm">둔타<small>→ 폭타</small></span><span class="rk r">GL 393 · UL 224</span></li>
+            <li><span class="nm">음뱃<small>→ 음번 (사탕 400개 주의)</small></span><span class="rk r">GL 793</span></li>
+            <li><span class="nm">두르보<small>→ 더스트나</small></span><span class="rk r">GL 838</span></li>
+            <li><span class="nm">요테리<small>→ 바랜드</small></span><span class="rk r">GL 578</span></li>
+            <li><span class="nm">네이티<small>→ 네이티오</small></span><span class="rk r">GL 475</span></li>
+            <li><span class="nm">몸지브림<small>→ 브리무음</small></span><span class="rk r">GL 723</span></li>
+            <li><span class="nm">콩둘기<small>→ 켄호로우 (암·수 도감 각 1회)</small></span><span class="rk r">GL 1099 · FLY 47</span></li>
+            <li><span class="nm">터검니<small>→ 형사구스 (낮에만 진화)</small></span><span class="rk r">GL 827</span></li>
+            <li><span class="nm">포챠나<small>→ 그라에나 (그림자 공낮만 예외)</small></span><span class="rk r">GL 272 (S)</span></li>
+            <li><span class="nm">일반 지그제구리<small>→ 직구리</small></span><span class="rk r">GL 203</span></li>
+            <li><span class="nm">가라르 지그제구리<small>→ 가로막구리 <span class="tag down" style="margin-left:2px">▼ PVP→XFER</span></small></span><span class="rk r">GL 659 · UL 496</span></li>
+            <li><span class="nm">포곰곰<small>→ 이븐곰 (사탕 400개 쓸 가치 없음) <span class="tag down" style="margin-left:2px">▼ PVP→XFER</span></small></span><span class="rk r">UL 488 · ML 191</span></li>
+            <li><span class="nm">주뱃<small>→ 골뱃 <span class="tag down" style="margin-left:2px">▼ PVP→XFER</span></small></span><span class="rk r">GL 352 · UL 578</span></li>
+            <li><span class="nm">뚜벅초<small>→ 라플레시아 (그림자 포함 풀 50위 밖) <span class="tag down" style="margin-left:2px">▼ RAID→XFER</span></small></span><span class="rk r">GL 951 (S)</span></li>
+            <li><span class="nm">소곤룡<small>→ 폭음룡</small></span><span class="rk r">GL 792</span></li>
+            <li><span class="nm">배루키<small>→ 시라소몬 / 홍수몬 / 카포에라 (도감 3종)</small></span><span class="rk r">GL 405 (S) · FGT 50위 밖</span></li>
+            <li><span class="nm">나옹마<small>→ 몬냥이</small></span><span class="rk r">GL 662</span></li>
+            <li><span class="nm">꼬렛<small>→ 레트라 (알로라폼 별개)</small></span><span class="rk r">GL 312</span></li>
+            <li><span class="nm">고라파덕<small>→ 골덕</small></span><span class="rk r">GL 685 · WTR 50위 밖</span></li>
+            <li><span class="nm">고디탱<small>→ 고디보미 / 고디모아젤</small></span><span class="rk r">GL 832</span></li>
+        </ul>
+    </section>
+
+    <!-- ── 5. SOURCES ──────────────────────────────────────── -->
+    <section class="panel s-meta" id="s5">
+        <div class="panel-head">5) SRC — 검증 출처 <span class="sub">2026-09-15 기준 · 시즌 밸런스 패치 시 변동</span></div>
+        <div class="src">
+            모든 순위는 아래 데이터에서 직접 조회한 값입니다. 티어 표현("S티어", "필수 픽" 등)은 제거하고 순위 숫자로 대체했습니다.
+            <ul>
+                <li><b>배틀리그</b> — <a href="https://pvpoke.com/rankings/" target="_blank" rel="noopener">PvPoke</a> 종합(overall) 랭킹 원본 데이터 (GitHub 저장소, 2026-09-15 갱신). GL 1,146종 / UL 844종 / ML 406종.</li>
+                <li><b>레이드</b> — <a href="https://www.dittobase.com/pokemon-go/best-attackers/fire" target="_blank" rel="noopener">Dittobase Best Attackers</a> 타입별 eDPS 랭킹: 불꽃·악·페어리·전기·비행·드래곤·격투·얼음·고스트·풀·물·에스퍼·땅·강철·바위·독·벌레 (각 상위 50위 조회).</li>
+                <li><b>기술머신 / 레거시(★) 여부</b> — <a href="https://github.com/pvpoke/pvpoke/blob/master/src/data/gamemaster.json" target="_blank" rel="noopener">PvPoke gamemaster.json</a>의 종별 <code>eliteMoves</code> 목록 (특별한 기술머신으로만 습득 가능한 기술) + <a href="https://www.dittobase.com/pokemon-go/pokedex/toucannon/moves" target="_blank" rel="noopener">Dittobase Pokédex</a> 교차 확인.</li>
+            </ul>
+        </div>
+    </section>
+
+</main>
+
+<script>
+(function () {
+    // ── 시계 ──
+    var clock = document.getElementById('clock');
+    function tick() {
+        var d = new Date();
+        var p = function (n) { return (n < 10 ? '0' : '') + n; };
+        clock.textContent = d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()) + ' ' +
+            p(d.getHours()) + ':' + p(d.getMinutes()) + ':' + p(d.getSeconds());
+    }
+    tick(); setInterval(tick, 1000);
+
+    // ── 티커: 무한 스크롤을 위해 내용 복제 ──
+    var track = document.getElementById('tickerTrack');
+    track.innerHTML += track.innerHTML;
+
+    // ── 검색 ──
+    var input = document.getElementById('searchInput');
+    var clearBtn = document.getElementById('searchClear');
+    var countEl = document.getElementById('searchCount');
+    var noResult = document.getElementById('noResult');
+    var sections = Array.prototype.slice.call(document.querySelectorAll('.panel:not(.s-meta)'));
+
+    // 검색 대상: 표의 각 행(tr) + 박사행 목록의 각 항목(li)
+    var items = Array.prototype.slice.call(document.querySelectorAll('.panel tbody tr, .panel .chips li'));
+    items.forEach(function (el) {
+        el.dataset.original = el.innerHTML;
+        el.dataset.text = el.textContent.replace(/\s+/g, ' ').toLowerCase();
+    });
+
+    function escapeRegExp(s) {
+        return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    // 텍스트 노드에만 하이라이트 적용 (태그 속성은 건드리지 않음)
+    function highlight(el, terms) {
+        var re = new RegExp('(' + terms.map(escapeRegExp).join('|') + ')', 'gi');
+        var walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
+        var nodes = [];
+        while (walker.nextNode()) nodes.push(walker.currentNode);
+        nodes.forEach(function (node) {
+            if (!re.test(node.nodeValue)) return;
+            re.lastIndex = 0;
+            var span = document.createElement('span');
+            span.innerHTML = node.nodeValue.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(re, '<mark>$1</mark>');
+            node.parentNode.replaceChild(span, node);
+        });
+    }
+
+    function filter() {
+        var q = input.value.trim().toLowerCase();
+        var terms = q ? q.split(/\s+/) : [];   // 공백 구분 AND 검색
+        var total = 0;
+
+        clearBtn.hidden = !q;
+
+        items.forEach(function (el) {
+            el.innerHTML = el.dataset.original;
+            var match = terms.every(function (t) { return el.dataset.text.indexOf(t) !== -1; });
+            el.style.display = match ? '' : 'none';
+            if (match) {
+                total++;
+                if (terms.length) highlight(el, terms);
+            }
+        });
+
+        // 보이는 항목이 없는 패널은 숨김 (표/목록이 없는 패널은 항상 표시)
+        sections.forEach(function (sec) {
+            var all = sec.querySelectorAll('tbody tr, .chips li').length;
+            if (!all) return;
+            var visible = sec.querySelectorAll('tbody tr:not([style*="display: none"]), .chips li:not([style*="display: none"])').length;
+            sec.style.display = visible ? '' : 'none';
+        });
+
+        noResult.hidden = total > 0;
+        countEl.textContent = q ? (total + ' / ' + items.length + ' HITS') : '';
+    }
+
+    input.addEventListener('input', filter);
+    input.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') { input.value = ''; filter(); input.blur(); }
+    });
+    clearBtn.addEventListener('click', function () {
+        input.value = '';
+        filter();
+        input.focus();
+    });
+
+    // 숫자키 1~5로 패널 이동 (검색창 포커스 시 제외)
+    document.addEventListener('keydown', function (e) {
+        if (document.activeElement === input) return;
+        if (e.key >= '1' && e.key <= '5') {
+            var t = document.getElementById('s' + e.key);
+            if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        if (e.key === '/') { e.preventDefault(); input.focus(); }
+    });
+})();
+</script>
+
+</body>
+</html>
