@@ -505,7 +505,7 @@
         </div>
         <div class="status">
             <span class="live">LIVE DATA</span>
-            <span class="src-tag">PVPOKE 2026-09-15 · DITTOBASE 2026-09-13 · BUILD 2026-09-15</span>
+            <span class="src-tag">PVPOKE 2026-09-15 · DITTOBASE 2026-09-13 · BUILD 2026-09-16</span>
             <span class="clock" id="clock">--:--:--</span>
         </div>
     </div>
@@ -3459,7 +3459,7 @@
 
     <!-- ── 5. SOURCES ──────────────────────────────────────── -->
     <section class="panel s-meta" id="s5">
-        <div class="panel-head">5) SRC — 데이터 출처 <span class="sub">빌드 2026-09-15 · 데이터 수집 2026-09-15 13:28</span></div>
+        <div class="panel-head">5) SRC — 데이터 출처 <span class="sub">빌드 2026-09-16 · 데이터 수집 2026-09-15 13:28</span></div>
         <div class="src">
             이 페이지는 <code>build.py</code>가 아래 데이터로 자동 생성합니다. 수작업 메모(NOTE 태그)는 <code>notes.json</code>에서 덧입혀지며, 메모 안의 순위 숫자는 작성 당시 값이라 칩의 최신 순위와 다를 수 있습니다.
             <ul>
@@ -3548,7 +3548,7 @@
     }
 
     input.addEventListener('input', filter);
-    input.addEventListener('keydown', function (e) { if (e.key === 'Escape') { input.value = ''; filter(); input.blur(); } });
+    input.addEventListener('keydown', function (e) { if (e.key === 'Escape') { input.value = ''; filter(); } });
     clearBtn.addEventListener('click', function () { input.value = ''; filter(); input.focus(); });
     filterBtns.forEach(function (b) {
         b.addEventListener('click', function () {

@@ -745,7 +745,7 @@
     }
 
     input.addEventListener('input', filter);
-    input.addEventListener('keydown', function (e) { if (e.key === 'Escape') { input.value = ''; filter(); input.blur(); } });
+    input.addEventListener('keydown', function (e) { if (e.key === 'Escape') { input.value = ''; filter(); } });
     clearBtn.addEventListener('click', function () { input.value = ''; filter(); input.focus(); });
     filterBtns.forEach(function (b) {
         b.addEventListener('click', function () {
