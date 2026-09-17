@@ -173,34 +173,6 @@
 
         .cmd .clear:hover { color: var(--amber); border-color: var(--amber); }
 
-        /* ── Ticker ──────────────────────────────────────────── */
-        .ticker {
-            overflow: hidden;
-            border-bottom: 1px solid var(--line);
-            background: var(--panel);
-            white-space: nowrap;
-            font-size: 12px;
-        }
-
-        .ticker-track {
-            display: inline-block;
-            padding: 5px 0;
-            animation: scroll 70s linear infinite;
-        }
-
-        .ticker:hover .ticker-track { animation-play-state: paused; }
-
-        @keyframes scroll {
-            from { transform: translateX(0); }
-            to   { transform: translateX(-50%); }
-        }
-
-        .tk { display: inline-block; margin: 0 22px; color: var(--muted); }
-        .tk b { color: var(--text); font-weight: 600; margin-right: 6px; }
-        .tk .up { color: var(--green); }
-        .tk .dn { color: var(--red); }
-        .tk .fl { color: var(--amber); }
-
         /* ── Layout ──────────────────────────────────────────── */
         .wrap {
             max-width: 1180px;
@@ -505,7 +477,7 @@
         </div>
         <div class="status">
             <span class="live">LIVE DATA</span>
-            <span class="src-tag">PVPOKE 2026-09-15 · DITTOBASE 2026-09-13 · BUILD 2026-09-16</span>
+            <span class="src-tag">PVPOKE 2026-09-15 · DITTOBASE 2026-09-13 · BUILD 2026-09-17</span>
             <span class="clock" id="clock">--:--:--</span>
         </div>
     </div>
@@ -532,66 +504,6 @@
         <button type="button" data-filter="legend">전설/환상</button>
     </div>
 </header>
-
-<!-- ── TICKER ──────────────────────────────────────────────── -->
-<div class="ticker" aria-hidden="true">
-    <div class="ticker-track" id="tickerTrack">
-        <span class="tk"><b>멜메탈</b> GL <span class="up">#1</span></span>
-        <span class="tk"><b>파비코리</b> GL <span class="up">#2</span></span>
-        <span class="tk"><b>나인테일</b> GL <span class="up">#3</span>(S)</span>
-        <span class="tk"><b>윽우지</b> GL <span class="up">#4</span></span>
-        <span class="tk"><b>두드리짱</b> GL <span class="up">#5</span></span>
-        <span class="tk"><b>따라큐</b> GL <span class="up">#6</span></span>
-        <span class="tk"><b>아머까오</b> GL <span class="up">#7</span></span>
-        <span class="tk"><b>가라르 코산호</b> GL <span class="up">#8</span></span>
-        <span class="tk"><b>플라제스</b> GL <span class="up">#11</span></span>
-        <span class="tk"><b>누오</b> GL <span class="up">#12</span>(S)</span>
-        <span class="tk"><b>폭슬라이</b> GL <span class="up">#15</span></span>
-        <span class="tk"><b>깨비물거미</b> GL <span class="up">#16</span></span>
-        <span class="tk"><b>두드리짱</b> UL <span class="up">#1</span></span>
-        <span class="tk"><b>아머까오</b> UL <span class="up">#2</span></span>
-        <span class="tk"><b>잠만보</b> UL <span class="up">#3</span>(S)</span>
-        <span class="tk"><b>멜메탈</b> UL <span class="up">#5</span></span>
-        <span class="tk"><b>비리디온</b> UL <span class="up">#6</span></span>
-        <span class="tk"><b>지가르데 퍼펙트폼</b> UL <span class="up">#7</span></span>
-        <span class="tk"><b>엠페르트</b> UL <span class="up">#8</span></span>
-        <span class="tk"><b>따라큐</b> UL <span class="up">#10</span></span>
-        <span class="tk"><b>플라제스</b> UL <span class="up">#12</span></span>
-        <span class="tk"><b>가라르 파이어</b> UL <span class="up">#13</span></span>
-        <span class="tk"><b>장크로다일</b> UL <span class="up">#14</span>(S)</span>
-        <span class="tk"><b>탱탱겔</b> UL <span class="up">#16</span></span>
-        <span class="tk"><b>펄기아 오리진폼</b> ML <span class="up">#1</span></span>
-        <span class="tk"><b>자시안 검왕</b> ML <span class="up">#2</span></span>
-        <span class="tk"><b>지가르데 퍼펙트폼</b> ML <span class="up">#3</span></span>
-        <span class="tk"><b>메타그로스</b> ML <span class="up">#4</span></span>
-        <span class="tk"><b>큐레무 화이트</b> ML <span class="up">#5</span></span>
-        <span class="tk"><b>제르네아스</b> ML <span class="up">#6</span></span>
-        <span class="tk"><b>가이오가</b> ML <span class="up">#7</span></span>
-        <span class="tk"><b>디아루가 오리진폼</b> ML <span class="up">#8</span></span>
-        <span class="tk"><b>레시라무</b> ML <span class="up">#9</span></span>
-        <span class="tk"><b>다투곰</b> ML <span class="up">#10</span></span>
-        <span class="tk"><b>무한다이노</b> ML <span class="up">#11</span></span>
-        <span class="tk"><b>루기아</b> ML <span class="up">#14</span></span>
-        <span class="tk"><b>그림자 거대코뿌리</b> RCK <span class="up">#1</span></span>
-        <span class="tk"><b>메가뮤츠 X</b> FGT <span class="up">#1</span></span>
-        <span class="tk"><b>메가뮤츠 Y</b> PSY <span class="up">#1</span></span>
-        <span class="tk"><b>메가라이츄 Y</b> ELE <span class="up">#1</span></span>
-        <span class="tk"><b>메가헤라크로스</b> BUG <span class="up">#1</span></span>
-        <span class="tk"><b>메가헬가</b> DRK <span class="up">#1</span></span>
-        <span class="tk"><b>메가가디안</b> FAI <span class="up">#1</span></span>
-        <span class="tk"><b>원시가이오가</b> WTR <span class="up">#1</span></span>
-        <span class="tk"><b>원시그란돈</b> GRD <span class="up">#1</span></span>
-        <span class="tk"><b>메가레쿠쟈</b> FLY <span class="up">#1</span></span>
-        <span class="tk"><b>그림자 레지기가스</b> NOR <span class="up">#1</span></span>
-        <span class="tk"><b>큐레무 화이트</b> ICE <span class="up">#1</span></span>
-        <span class="tk"><b>메가브리가론</b> GRS <span class="up">#1</span></span>
-        <span class="tk"><b>메가마폭시</b> FIR <span class="up">#1</span></span>
-        <span class="tk"><b>네크로즈마 황혼의갈기</b> GHO <span class="up">#1</span></span>
-        <span class="tk"><b>자마젠타 방패왕</b> STL <span class="up">#1</span></span>
-        <span class="tk"><b>무한다이노</b> DRG <span class="up">#1</span></span>
-        <span class="tk"><b>무한다이노</b> PSN <span class="up">#1</span></span>
-    </div>
-</div>
 
 <main class="wrap">
 
@@ -3459,7 +3371,7 @@
 
     <!-- ── 5. SOURCES ──────────────────────────────────────── -->
     <section class="panel s-meta" id="s5">
-        <div class="panel-head">5) SRC — 데이터 출처 <span class="sub">빌드 2026-09-16 · 데이터 수집 2026-09-15 13:28</span></div>
+        <div class="panel-head">5) SRC — 데이터 출처 <span class="sub">빌드 2026-09-17 · 데이터 수집 2026-09-15 13:28</span></div>
         <div class="src">
             이 페이지는 <code>build.py</code>가 아래 데이터로 자동 생성합니다. 수작업 메모(NOTE 태그)는 <code>notes.json</code>에서 덧입혀지며, 메모 안의 순위 숫자는 작성 당시 값이라 칩의 최신 순위와 다를 수 있습니다.
             <ul>
@@ -3487,10 +3399,6 @@
             p(d.getHours()) + ':' + p(d.getMinutes()) + ':' + p(d.getSeconds());
     }
     tick(); setInterval(tick, 1000);
-
-    // ── 티커: 무한 스크롤을 위해 내용 복제 ──
-    var track = document.getElementById('tickerTrack');
-    track.innerHTML += track.innerHTML;
 
     // ── 검색 + 필터 ──
     var input = document.getElementById('searchInput');

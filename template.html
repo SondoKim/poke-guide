@@ -173,34 +173,6 @@
 
         .cmd .clear:hover { color: var(--amber); border-color: var(--amber); }
 
-        /* ── Ticker ──────────────────────────────────────────── */
-        .ticker {
-            overflow: hidden;
-            border-bottom: 1px solid var(--line);
-            background: var(--panel);
-            white-space: nowrap;
-            font-size: 12px;
-        }
-
-        .ticker-track {
-            display: inline-block;
-            padding: 5px 0;
-            animation: scroll 70s linear infinite;
-        }
-
-        .ticker:hover .ticker-track { animation-play-state: paused; }
-
-        @keyframes scroll {
-            from { transform: translateX(0); }
-            to   { transform: translateX(-50%); }
-        }
-
-        .tk { display: inline-block; margin: 0 22px; color: var(--muted); }
-        .tk b { color: var(--text); font-weight: 600; margin-right: 6px; }
-        .tk .up { color: var(--green); }
-        .tk .dn { color: var(--red); }
-        .tk .fl { color: var(--amber); }
-
         /* ── Layout ──────────────────────────────────────────── */
         .wrap {
             max-width: 1180px;
@@ -533,13 +505,6 @@
     </div>
 </header>
 
-<!-- ── TICKER ──────────────────────────────────────────────── -->
-<div class="ticker" aria-hidden="true">
-    <div class="ticker-track" id="tickerTrack">
-{{TICKER}}
-    </div>
-</div>
-
 <main class="wrap">
 
     <section class="panel s-meta">
@@ -684,10 +649,6 @@
             p(d.getHours()) + ':' + p(d.getMinutes()) + ':' + p(d.getSeconds());
     }
     tick(); setInterval(tick, 1000);
-
-    // ── 티커: 무한 스크롤을 위해 내용 복제 ──
-    var track = document.getElementById('tickerTrack');
-    track.innerHTML += track.innerHTML;
 
     // ── 검색 + 필터 ──
     var input = document.getElementById('searchInput');

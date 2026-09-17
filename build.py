@@ -286,7 +286,6 @@ def main():
     rows = {"both": [], "raid": [], "pvp": [], "xfer": []}
     stats = defaultdict(int)
     elite_needed_total = 0
-    ticker_pool = []
 
     for g in groups:
         dexes = {m["dex"] for m in g["members"]}
@@ -462,26 +461,12 @@ def main():
                 small += f' <span class="auto">{note["memo"]}</span>'
             rows["xfer"].append((base["dex"], f'<li{data_attr}><span class="nm">{esc(base["_label"])}<small>{small}</small></span>{chip}</li>'))
         stats[sec] += 1
-        for cp, b in pvp.items():
-            ticker_pool.append((cp, b["rank"], b["member"]["_label"], b["shadow"]))
-        for e in raid_ok:
-            if e["rank"] == 1:
-                ticker_pool.append(("raid", e["type"], ko_label(e["_dex"], e["slug"].replace("-", "_"), ko_species, e["name"]), e["released"]))
 
     for k in rows:
         rows[k].sort(key=lambda x: x[0])
 
-    tk = []
-    for cp, lab in ((1500, "GL"), (2500, "UL"), (10000, "ML")):
-        for _, r, name, sh in sorted([t for t in ticker_pool if t[0] == cp], key=lambda t: t[1])[:12]:
-            tk.append(f'        <span class="tk"><b>{esc(name)}</b> {lab} <span class="up">#{r}</span>{"(S)" if sh else ""}</span>')
-    for _, t, name, rel in [x for x in ticker_pool if x[0] == "raid"]:
-        unrel = "" if rel else ' <span class="dn">미출시</span>'
-        tk.append(f'        <span class="tk"><b>{esc(name)}</b> {TYPE_AB[t]} <span class="up">#1</span>{unrel}</span>')
-    ticker_html = chr(10).join(tk)
     tpl = open(os.path.join(ROOT, "template.html"), encoding="utf-8").read()
     out = (tpl
-           .replace("{{TICKER}}", ticker_html)
            .replace("{{BOTH_ROWS}}", "".join(r for _, r in rows["both"]))
            .replace("{{RAID_ROWS}}", "".join(r for _, r in rows["raid"]))
            .replace("{{PVP_ROWS}}", "".join(r for _, r in rows["pvp"]))
