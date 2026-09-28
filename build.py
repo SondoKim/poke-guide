@@ -207,6 +207,38 @@ def build_groups(gm, ko_species):
     return out, P
 
 
+# ── 진화 단계 ────────────────────────────────────────────────────────────
+def evo_chain(group, base):
+    """base에서 시작하는 진화 단계별 한국어 이름. [['토게틱'], ['토게키스']]
+
+    계보를 따라가지 못하는 폼(다른 지방 폼 등)은 종전처럼 최종 진화체만 마지막 단계에 병기한다.
+    """
+    by_sid = {m["speciesId"]: m for m in group["members"]}
+    order = lambda m: (m["dex"], m["speciesId"])
+    seen = {base["speciesId"]}
+    stages, frontier = [], [base]
+    while frontier:
+        nxt = []
+        for m in frontier:
+            for e in ((m.get("family") or {}).get("evolutions") or []):
+                if e in by_sid and e not in seen:
+                    seen.add(e)
+                    nxt.append(by_sid[e])
+        labels = list(dict.fromkeys(m["_label"] for m in sorted(nxt, key=order) if not m["_mega"]))
+        if labels:
+            stages.append(labels)
+        frontier = nxt
+    rest = [m for m in sorted(group["members"], key=order)
+            if m is not base and not m["_mega"] and m["speciesId"] not in seen]
+    tail = [m["_label"] for m in rest if m["_final"]] or ([m["_label"] for m in rest] if not stages else [])
+    if tail:
+        if stages:
+            stages[-1] = list(dict.fromkeys(stages[-1] + tail))
+        else:
+            stages.append(list(dict.fromkeys(tail)))
+    return stages
+
+
 # ── PvP ──────────────────────────────────────────────────────────────────
 def pvp_best(group, rank, P):
     """리그별 최고 순위 (그림자 포함). → {cp: {rank, sid, moveset, member}}"""
@@ -314,8 +346,8 @@ def main():
                 break
         finals = [m for m in g["members"] if m["_final"] and not m["_mega"]]
         megas = [m for m in g["members"] if m["_mega"]]
-        evo_names = [m["_label"] for m in finals if m is not base] or [m["_label"] for m in g["members"] if m is not base and not m["_mega"]]
-        evo_txt = ("→ " + " / ".join(dict.fromkeys(evo_names))) if evo_names else "진화 없음"
+        evo_stages = evo_chain(g, base)
+        evo_txt = " ".join("→ " + " / ".join(st) for st in evo_stages) if evo_stages else "진화 없음"
         if megas:
             evo_txt += " · " + " / ".join(m["_label"] for m in megas)
         has_shadow = any(m["_shadow_id"] for m in g["members"])
