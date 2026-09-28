@@ -45,11 +45,16 @@ def save(name, data: bytes):
     print(f"  saved {name} ({len(data):,} bytes)")
 
 
+def minify(data: bytes) -> bytes:
+    """업스트림이 예쁘게 들여쓴 JSON을 내려줄 때가 있어 공백을 없애고 저장한다(diff 최소화)."""
+    return json.dumps(json.loads(data), ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+
+
 def fetch_pvpoke():
     print("[PvPoke]")
-    save("gamemaster.json", get(PVPOKE_RAW + "gamemaster.json"))
+    save("gamemaster.json", minify(get(PVPOKE_RAW + "gamemaster.json")))
     for cp in (1500, 2500, 10000):
-        save(f"rankings-{cp}.json", get(f"{PVPOKE_RAW}rankings/all/overall/rankings-{cp}.json"))
+        save(f"rankings-{cp}.json", minify(get(f"{PVPOKE_RAW}rankings/all/overall/rankings-{cp}.json")))
 
 
 def fetch_pokeapi():
